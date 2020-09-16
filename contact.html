@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <title>Aleksejs portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <div class="jumbotron text-center">
+    <h1>Aleksejs Porftolio</h1>
+  </div>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Galvene</a></li>
+        <li><a href="about.html">Par mani</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Konktaktinformācija</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <h1>Ja vēlies kontaktēties ar mani, piesaki formu zemāk.</h1>
+  <form name="forma" action="contact.html" onsubmit="return parbaudit_formu()">
+
+    <label for="vards">Vārds</label>
+    <input type="text" id="vards" name="vards" placeholder="Vārds..">
+
+
+    <label for="teksts">Teksts</label>
+    <textarea id="teksts" name="teksts" placeholder="Ieraksti kaut ko..." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+    <button type="reset" value="reset">Reset</button>
+
+  </form>
+</div>
+
+  <footer>
+    <p>Autors: Aleksejs Pavlovs</p>
+<p><a href="mailto:aleksejs@pavlovs.lv">aleksejs@pavlovs.lv</a></p>
+  </footer>
+
+
+</body>
+</html>
