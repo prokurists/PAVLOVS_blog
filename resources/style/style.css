@@ -32,7 +32,10 @@ body{
 #images {
   width: 100%;
   height: auto;
-  min-height: 200px;
+}
+
+.container{
+  width: 100%;
 }
 
 footer{
