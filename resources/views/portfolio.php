@@ -1,7 +1,7 @@
-<div class="container" style="background-color:#f1f1f1">
+<div class="container">
   <div class="row">
     <div class="column-33">
-    <img src="../resources/images/5.png" width="100%">
+    <img src="../resources/images/6.png" width="100%">
     </div>
     <div class="column-66">
     <h1 class="large-font" style="color:MediumSeaGreen;"><b>Kāpēc Tu te esi ?</b></h1>
