@@ -29,6 +29,11 @@ body{
   width: 33.33333%;
 }
 
+#images {
+  width: 100%;
+  height: auto;
+}
+
 footer{
   text-align: center;
 }
