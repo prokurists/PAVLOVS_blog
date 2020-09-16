@@ -1,7 +1,6 @@
 /*Aleksejs portfolio stylesheet */
 
 body{
-  max-width: 80%;
   margin:auto;
 }
 .jumbotron{
@@ -34,9 +33,9 @@ body{
   height: auto;
 }
 
-.container{
+/* .container{
   width: 100%;
-}
+} */
 
 footer{
   text-align: center;
