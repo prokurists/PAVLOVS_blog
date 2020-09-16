@@ -22,13 +22,11 @@ body{
 .column-66 {
   float: left;
   width: 66.66666%;
-  padding: 20px;
 }
 
 .column-33 {
   float: left;
   width: 33.33333%;
-  padding: 20px;
 }
 
 footer{
