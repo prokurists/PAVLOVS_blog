@@ -1,6 +1,6 @@
 <?php 
 $request = $_SERVER['REQUEST_URI'];
-echo $request;
+
 switch ($request) {
     case '/' :
         require __DIR__ . '/views/index.php';

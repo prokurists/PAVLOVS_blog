@@ -5,7 +5,7 @@
       <a class="nav-link" href="/">Galvene</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/porftolio">Porftolio</a>
+      <a class="nav-link" href="/portfolio">Porftolio</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="/about">Par mani</a>
