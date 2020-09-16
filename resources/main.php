@@ -1,5 +1,5 @@
 <?php 
-$request = ($_SERVER['REQUEST_URI']);
+$request = $_SERVER['REQUEST_URI'];
 echo $request;
 switch ($request) {
     case '/' :
