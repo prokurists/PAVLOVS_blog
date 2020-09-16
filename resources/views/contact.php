@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="column-33">
-    <img src="../resources/images/6.png" class="img-fluid" id="images"> 
+    <img src="../resources/images/contact.png" class="img-fluid" id="images"> 
     </div>
     <div class="column-66">
     <h1 class="large-font" style="color:MediumSeaGreen;"><b>Kāpēc Tu te esi ?</b></h1>
