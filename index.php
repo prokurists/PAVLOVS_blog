@@ -11,16 +11,19 @@
   <link rel="stylesheet" type="text/css" href="resources/style/style.css">
 </head>
   <body>
+
+      <div class="jumbotron text-center">
           <?php require __DIR__ . '/resources/jumbo.php';?>
+      </div>
 
           <?php require __DIR__ . '/resources/navi.php';?>
 
+      <div class="container-fluid">
           <?php require __DIR__ . '/resources/main.php';?>
+      </div>
 
   <footer>
-
           <?php require __DIR__ . '/resources/footer.php';?>
-
   </footer>
 
   </body>
