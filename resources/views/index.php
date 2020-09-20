@@ -1,4 +1,4 @@
-<h1 class="display-1" id="heading">Jaunumi / Blogs</h1>
+<h1 id="heading">Jaunumi / Blogs</h1>
 <div class="card">
   <div class="card-header">
     Featured
