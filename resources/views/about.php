@@ -1,22 +1,22 @@
-<div class="card-group">
+<div class="card-deck">
   <div class="card bg-primary">
     <div class="card-body text-center">
-      <p class="card-text">Izglitiba</p>
+      <p class="card-text">Some text inside the first card</p>
     </div>
   </div>
   <div class="card bg-warning">
     <div class="card-body text-center">
-      <p class="card-text">Darba pieredze</p>
+      <p class="card-text">Some text inside the second card</p>
     </div>
   </div>
   <div class="card bg-success">
     <div class="card-body text-center">
-      <p class="card-text">Hobiji</p>
+      <p class="card-text">Some text inside the third card</p>
     </div>
   </div>
   <div class="card bg-danger">
     <div class="card-body text-center">
-      <p class="card-text">Zināšanas programmēšanā</p>
+      <p class="card-text">Some text inside the fourth card</p>
     </div>
   </div>
 </div>
