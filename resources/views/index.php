@@ -7,12 +7,12 @@
 </div>
 <!-- Second Card -->
 <div class="card">
-<div class="card-title>Title here</div>
+<div class="card-title">Title here</div>
 <div class="card-body">Body here</div>
 </div>
 <!-- Second Card -->
 <div class="card">
-<div class="card-title>Title here</div>
+<div class="card-title">Title here</div>
 <div class="card-body">Body here</div>
 </div>
 </div>
