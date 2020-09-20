@@ -27,6 +27,11 @@ body{
   height: auto;
 }
 
+.card-img-top{
+  width: 100%;
+  height: auto;
+}
+
 footer{
   text-align: center;
 }
