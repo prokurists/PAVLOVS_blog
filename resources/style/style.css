@@ -9,6 +9,11 @@ body{
   background-color: white;
 }
 
+.container-fluid{
+  max-width: 80%;
+  margin: auto;
+}
+
 #top-container{
   border-radius: 5px;
   padding:5px;
@@ -26,34 +31,9 @@ body{
   width: 100%;
   height: auto;
 }
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
+#heading{
+font-size: large;
+color: green;
 }
 
 footer{
