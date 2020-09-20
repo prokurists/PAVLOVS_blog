@@ -11,7 +11,8 @@
   <link rel="stylesheet" type="text/css" href="resources/style/style.css">
 </head>
   <body>
-  <?php require __DIR__ . '/resources/navi.php';?>
+
+      <?php require __DIR__ . '/resources/navi.php';?>
 
       <div class="jumbotron text-center">
           <?php require __DIR__ . '/resources/jumbo.php';?>
