@@ -7,7 +7,6 @@ body{
 
 .jumbotron{
   background-color: white;
-  padding-bottom: 0px;
 }
 
 .container-fluid{
@@ -28,16 +27,12 @@ body{
   border-color: white;
 }
 
-
-
 #images{
   width: 100%;
   height: auto;
 }
 #heading{
-text-align:center;
-color: green;
-}
+text-align:center;}
 
 footer{
   text-align: center;
