@@ -1,1 +1,1 @@
-<h1 id="heading"><b>Par mani</b></h1>
+<h1 class="display-1" id="heading">Kontaktinformācija</h1>

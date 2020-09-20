@@ -33,7 +33,7 @@ body{
   height: auto;
 }
 #heading{
-font-size: large;
+text-align:center;
 color: green;
 }
 

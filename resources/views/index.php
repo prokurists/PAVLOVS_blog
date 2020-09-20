@@ -1,4 +1,4 @@
-<h1 id="heading"><b>Jaunumi / Blogs</b></h1>
+<h1 class="display-1" id="heading">Jaunumi / Blogs</h1>
 <div class="card mb-3">
 <div class="card-body">
     <h5 class="card-title">Pirmā pieredze programmēšanā</h5>
