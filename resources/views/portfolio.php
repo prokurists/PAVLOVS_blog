@@ -6,14 +6,14 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../resources/images/pavlovs.lv.jpg" class="d-block w-100" alt="...">
+      <img src="../resources/images/pavlovs.JPG" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>www.pavlovs.lv</h5>
         <p>Alekseja Pavlova portfolio</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../resources/images/izdevumi.pavlovs.lv.png" class="d-block w-100" alt="...">
+      <img src="../resources/images/izdevumi.png" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>www.izdevumi.pavlovs.lv</h5>
         <p>Top lietotne izdevumu sekošanai</p>
