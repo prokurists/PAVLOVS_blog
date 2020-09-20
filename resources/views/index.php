@@ -1,18 +1,31 @@
 <h1 class="display-1" id="heading">Jaunumi / Blogs</h1>
-<div class=card-deck>
-<!-- First Card -->
 <div class="card">
-<div class="card-title">Title here</div>
-<div class="card-body">Body here</div>
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
 </div>
-<!-- Second Card -->
 <div class="card">
-<div class="card-title">Title here</div>
-<div class="card-body">Body here</div>
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
 </div>
-<!-- Second Card -->
 <div class="card">
-<div class="card-title">Title here</div>
-<div class="card-body">Body here</div>
-</div>
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
 </div>
