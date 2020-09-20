@@ -17,9 +17,9 @@ body{
   border-radius: 2em;
 }
 
-.navbar{
+.navbar {
   background-color: white;
-  border: 0;
+  border: white;
 }
 
 #images {
