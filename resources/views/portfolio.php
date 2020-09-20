@@ -1,4 +1,4 @@
-<div class="card-group">
+<div class="card-deck">
   <div class="card">
     <img class="card-img-top" src="../resources/images/1.jpg" id="images" alt="Card image cap">
     <div class="card-body">
