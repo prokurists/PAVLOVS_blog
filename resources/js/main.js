@@ -1,16 +1,16 @@
-function parbaudit_formu(){
-    var vards = document.forms["form"]["email"].value;
-    var teksts = document.forms["form"]["textarea"].value;
-    var summa_client = document.forms["form"]["total_sum_client"].value;
-    var summa_real = document.forms["form"]["total_sum_real"].value;
+function check_Form(){
 
-    if (summa_client !== summa_real){
+    var email = document.forms["form"]["email"].value;
+    var text_area = document.forms["form"]["textarea"].value;
+    var total_client = document.forms["form"]["total_sum_client"].value;
+
+    if (total_client !== total_real){
       alert("Summa nesakrīt!");  }
 
-    else if (vards == ""){
+    else if (email == ""){
         alert("Jāaizpilda vārds");    }
 
-    else if (teksts == ""){
+    else if (text_area == ""){
         alert("Jāaizpilda teksts");    }
 
     else {
