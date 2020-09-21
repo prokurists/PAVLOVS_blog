@@ -8,5 +8,8 @@
     <label for="textarea">Piezīmes</label>
     <textarea class="form-control" rows="3"></textarea>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <div class="form group">
+  <label for="captcha">Captcha</label>
+  <
+  <button type="submit" class="btn btn-primary" <? $is_Disabled ?>>Submit</button>
 </form>
