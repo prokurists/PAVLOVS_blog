@@ -1,6 +1,6 @@
 <h3> Ja vēlies sazināties ar mani, lūdzu aizpildi formu </h3>
-<form>
-  <div class="form-group" value="form" onsubmit="return parbaudit_formu()">
+<form name="form" onsubmit="return parbaudit_formu()">
+  <div class="form-group">
     <label for="email">E-pasta adrese</label>
     <input type="email" value="email"class="form-control">
   </div>
