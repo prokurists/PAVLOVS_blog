@@ -20,7 +20,7 @@ var total_sum = "<?php echo $total_Sum; ?>";
     <textarea class="form-control" value="textarea" rows="3"></textarea>
   </div>
   <div class="form group">
-  <label for="captcha">Captcha <?php echo "Cik ir " . $first_Number . " + " . $second_Number. " = " . $total_Sum; ?></label>
+  <label for="captcha"><?php echo "Cik ir " . $first_Number . " + " . $second_Number. " = " . $total_Sum; ?></label>
   <input type="number" value="total_sum" class="form-control">
 
   

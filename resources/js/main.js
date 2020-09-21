@@ -11,7 +11,7 @@ function parbaudit_formu(){
         alert("Jāaizpilda teksts");
     }
 
-    elseif (summa == first_number + $second_number){
+    else if (summa == first_number + second_number){
         alert("Summa nesakrīt!");
     }
     else {
