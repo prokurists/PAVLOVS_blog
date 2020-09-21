@@ -10,7 +10,7 @@ var total_sum = "<?php echo $total_Sum; ?>";
 
 </script>
 <h3> Ja vēlies sazināties ar mani, lūdzu aizpildi formu </h3>
-<form name="form" onSubmit="return parbaudit_formu()">
+<form name="form" onsubmit="return parbaudit_formu()" method="POST">
   <div class="form-group">
     <label for="email">E-pasta adrese</label>
     <input type="email" name="email" class="form-control">
