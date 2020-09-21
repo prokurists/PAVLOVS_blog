@@ -4,6 +4,11 @@
   $total_Sum = $first_Number + $second_Number;
 ?>
 
+<script>
+var total_sum = "<?php echo $total_Sum; ?>";
+
+</script>
+
 <h3> Ja vēlies sazināties ar mani, lūdzu aizpildi formu </h3>
 <form name="form" onsubmit="return parbaudit_formu()" method="POST">
   <div class="form-group">
