@@ -1,6 +1,6 @@
 <h3> Ja vēlies sazināties ar mani, lūdzu aizpildi formu </h3>
 <form>
-  <div class="form-group">
+  <div class="form-group" onSubmit="return checkForm()">
     <label for="email">E-pasta adrese</label>
     <input type="email" class="form-control">
   </div>
@@ -11,5 +11,5 @@
   <div class="form group">
   <label for="captcha">Captcha</label>
   
-  <button type="submit" class="btn btn-primary" <? $is_Disabled; ?>>Submit</button>
+  <button type="submit" class="btn btn-primary" <?php $is_Disabled; ?> >Submit</button>
 </form>

@@ -23,3 +23,7 @@ function parbaudit_formu(){
 }
 
 $is_Disabled = "disabled";
+
+function checkForm(x){
+return false;
+}
