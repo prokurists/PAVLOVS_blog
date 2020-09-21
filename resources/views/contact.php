@@ -10,6 +10,6 @@
   </div>
   <div class="form group">
   <label for="captcha">Captcha</label>
-  <
-  <button type="submit" class="btn btn-primary" <? $is_Disabled ?>>Submit</button>
+  
+  <button type="submit" class="btn btn-primary" <? $is_Disabled; ?>>Submit</button>
 </form>
