@@ -1,10 +1,10 @@
 function parbaudit_formu(){
     var vards = document.forms["form"]["email"].value;
     var teksts = document.forms["form"]["textarea"].value;
-    var summa = document.forms["form"]["total_sum"].value;
-    var first_number = "<?php echo $first_Number; ?>";
-    var second_number = "<?php echo $second_Number; ?>";
-    var total_sum = "<?php echo $total_Sum; ?>";
+    var summa_client = document.forms["form"]["total_sum_client"].value;
+    var summa_real = document.forms["form"]["total_sum_real"].value;
+
+
 
     if (vards == ""){
         alert("Jāaizpilda vārds");
@@ -13,7 +13,7 @@ function parbaudit_formu(){
         alert("Jāaizpilda teksts");
     }
 
-    else if (summa !== first_number + second_number){
+    else if (summa_client !== summa_real){
         alert("Summa nesakrīt!");
     }
     else {
