@@ -13,7 +13,5 @@ function check_Form(){
     else if (text_area == ""){
         alert("Jāaizpilda teksts");    }
 
-    else {
-        alert("Nedrīkst būt tukši lauki!");    }
     
 }
