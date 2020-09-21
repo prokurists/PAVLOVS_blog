@@ -7,7 +7,7 @@ function parbaudit_formu(){
     if (summa_client !== summa_real){
       alert("Summa nesakrīt!");  }
 
-    if (vards == ""){
+    else if (vards == ""){
         alert("Jāaizpilda vārds");    }
 
     else if (teksts == ""){

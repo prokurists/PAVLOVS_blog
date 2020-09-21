@@ -17,7 +17,7 @@
   <div class="form group">
   <label for="captcha"><?php echo "Cik ir " . $first_Number . " + " . $second_Number. " = " . $total_Sum; ?></label>
   <input type="number" name="total_sum_client" class="form-control">
-  <input type="number" name="total_sum_real" value="<?php echo $total_Sum; ?>" class="form-control">
+  <!-- <input type="number" name="total_sum_real" value="<?php echo $total_Sum; ?>" class="form-control"> -->
 
 
   
