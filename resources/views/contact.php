@@ -24,3 +24,13 @@ var total_real = "<?php echo $total_Sum; ?>";
   <input type="number" name="total_sum_client" class="form-control">  
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
+<?php
+  if ($_SERVER["REQUEST_METHOD"] == "POST"){
+    $email = test_input($_POST["email"]);
+    $text_area = test_input($_POST["textarea"]);
+
+    echo "Paldies, " . $email . ". Tavs teksts: " . $text_area . " ir nosūtīts!"; 
+
+  }
+?>
