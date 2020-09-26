@@ -20,6 +20,8 @@ if ($_SESSION["admin"] != "admin"){ ?>
     if(isset($_POST['admin_login'])){
     $admin_email = test_input($_POST["admin_email"]);
     $admin_password = test_input($_POST["admin_password"]);
+
+    echo $admin_email;
     
     if ($admin_password = "admin" & $admin_email = "admin@admin"){
       echo "Esi ielogojies";
