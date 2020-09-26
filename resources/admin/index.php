@@ -4,7 +4,7 @@ session_start();
 if ($_SESSION["admin"] != "admin"){ ?>
 
 <body class="text-center">
-    <form class="form-signin" method="POST" name="admin_login">
+    <form class="form-signin" method="POST" name="admin_login" action="<?php echo $_SERVER['PHP_SELF']; ?>">
       <h1 class="h3 mb-3 font-weight-normal">Lūdzu ielogojies</h1>
       <label for="inputEmail" class="sr-only">E-pasta adrese</label>
       <input type="email" name="admin_email" id="inputEmail" class="form-control" placeholder="E-pasta adrese" required autofocus>
@@ -31,7 +31,7 @@ if ($_SESSION["admin"] != "admin"){ ?>
 
 } else {    ?>
 
-  <form name="admin_add"  method="POST" >
+  <form name="admin_add"  method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
   <div class="form-group">
     <label for="text">Posta nosaukums</label>
     <input type="text" name="name" class="form-control">
