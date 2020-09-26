@@ -3,8 +3,3 @@ RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.+)$ index.php [QSA,L]
-
-AuthType Basic
-AuthName "Admin panelis"
-AuthUserFile pavlovs.lv/htdocs/resources/admin/.htpasswd #complete path to .htpasswd file.
-require valid-user
