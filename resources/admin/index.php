@@ -23,7 +23,7 @@ if ($_SESSION["admin"] != "admin"){ ?>
     
     if ($admin_password = "admin" & $admin_email = "admin@admin"){
       echo "Esi ielogojies";
-      $_SESSION["admin"];}
+      $_SESSION["admin"] = "admin";}
       else{
         echo "Parole vai lietotājvārds ir nepareizs";
       }
