@@ -22,7 +22,7 @@ if ($_SESSION["admin"] != "admin"){ ?>
     $admin_password = test_input($_POST["admin_password"]);
     
     if ($admin_password = "admin" & $admin_email = "admin@admin"){
-      echo "Esi ielogojies"
+      echo "Esi ielogojies";
       $_SESSION["admin"];}
       else{
         echo "Parole vai lietotājvārds ir nepareizs";
