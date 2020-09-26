@@ -14,8 +14,16 @@ switch ($request) {
     case '/contact' :
         require __DIR__ . '/views/contact.php';
         break;  
+// In case if admin
     case '/post/new' :
-        echo $_SERVER['REQUEST_URI'];
+        require __DIR__. '/admin/new_post.php';
+        break;
+
+    case '/admin' :
+        require __DIR__. '/admin/index.php';
+        break;
+
+
     default:
         http_response_code(404);
         require __DIR__ . '/views/404.php';
