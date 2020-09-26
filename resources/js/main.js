@@ -22,3 +22,7 @@ function test_input($data) {
   $data = htmlspecialchars($data);
   return $data;
 }
+
+function post_created(){
+    return Date();
+}
