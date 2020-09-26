@@ -1,7 +1,22 @@
 <?php
 session_start();
 
-if ($_SESSION["admin"] != "admin"){ ?>
+if ($_SESSION["admin"] != "admin"){
+  if(isset($_POST['admin_login'])){
+    $admin_email = test_input($_POST["admin_email"]);
+    $admin_password = test_input($_POST["admin_password"]);
+
+    echo $admin_email;
+    
+    if ($admin_password = "admin" & $admin_email = "admin@admin"){
+      echo "Esi ielogojies";
+      $_SESSION["admin"] = "admin";}
+      else{
+        echo "Parole vai lietotājvārds ir nepareizs";
+      }
+    } 
+
+  ?>
 
 <body class="text-center">
     <form class="form-signin" method="POST" name="admin_login" action="<?php echo $_SERVER['REQUEST_URI']; ?>">
@@ -16,22 +31,7 @@ if ($_SESSION["admin"] != "admin"){ ?>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
     </form>
 
-<?php  
-    if(isset($_POST['admin_login'])){
-    $admin_email = test_input($_POST["admin_email"]);
-    $admin_password = test_input($_POST["admin_password"]);
-
-    echo $admin_email;
-    
-    if ($admin_password = "admin" & $admin_email = "admin@admin"){
-      echo "Esi ielogojies";
-      $_SESSION["admin"] = "admin";}
-      else{
-        echo "Parole vai lietotājvārds ir nepareizs";
-      }
-    } 
-
-} else {    ?>
+<?php  } else {    ?>
 
   <form name="admin_add"  method="POST" action="<?php echo $_SERVER['REQUEST_URI']; ?>">
   <div class="form-group">
