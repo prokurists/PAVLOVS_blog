@@ -13,7 +13,9 @@ switch ($request) {
         break;
     case '/contact' :
         require __DIR__ . '/views/contact.php';
-        break;    
+        break;  
+    case '/post/new' :
+        echo $_SERVER['REQUEST_URI'];
     default:
         http_response_code(404);
         require __DIR__ . '/views/404.php';
