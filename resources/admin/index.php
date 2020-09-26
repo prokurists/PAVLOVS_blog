@@ -19,7 +19,7 @@ if ($_SESSION["admin"] != "admin"){
   ?>
 
 <body class="text-center">
-    <form class="form-signin" method="POST" name="admin_login" action="<?php echo $_SERVER['REQUEST_URI']; ?>">
+    <form class="form-signin" method="POST" name="admin_login">
       <h1 class="h3 mb-3 font-weight-normal">Lūdzu ielogojies</h1>
       <label for="inputEmail" class="sr-only">E-pasta adrese</label>
       <input type="email" name="admin_email" id="inputEmail" class="form-control" placeholder="E-pasta adrese" required autofocus>
