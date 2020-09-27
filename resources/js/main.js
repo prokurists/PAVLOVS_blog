@@ -5,13 +5,17 @@ function check_Form(){
     var total_client = document.forms["new_email"]["total_sum_client"].value;
 
     if (total_client !== total_real){
-        alert("Summa nesakrīt!"); die;  }
+        alert("Summa nesakrīt!"); return false;  }
 
     else if (email == ""){
-        alert("Jāaizpilda vārds"); die;   }
+        alert("Jāaizpilda vārds"); return false;   }
 
     else if (text_area == ""){
-        alert("Jāaizpilda teksts"); die;   }
+        alert("Jāaizpilda teksts"); return false;   }
+
+    else{
+
+    }
 
     
 }
