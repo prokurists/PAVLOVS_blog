@@ -15,7 +15,7 @@ switch ($request) {
         require __DIR__ . '/views/contact.php';
         break;  
 // In case if admin
-    case '/post/new' :
+    case '/admin/post/new' :
         require __DIR__. '/admin/new_post.php';
         break;
 
