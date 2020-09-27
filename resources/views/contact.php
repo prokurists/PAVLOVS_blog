@@ -10,7 +10,7 @@ var total_real = "<?php echo $total_Sum; ?>";
 </script>
 
 <h3> Ja vēlies sazināties ar mani, lūdzu aizpildi formu </h3>
-<form name="form"  method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+<form name="form"  method="POST">
   <div class="form-group">
     <label for="email">E-pasta adrese</label>
     <input type="email" name="email" class="form-control">
@@ -22,12 +22,12 @@ var total_real = "<?php echo $total_Sum; ?>";
   <div class="form group">
   <label for="captcha"><?php echo "Cik ir " . $first_Number . " + " . $second_Number; ?></label>
   <input type="number" name="total_sum_client" class="form-control">  
-  <button type="submit" onclick="return check_Form()" class="btn btn-primary">Submit</button>
+  <button type="submit" onclick="return check_Form()" class="btn btn-primary" name="new_email">Submit</button>
 </form>
 
 <?php
-  if ($_SERVER["REQUEST_METHOD"] == "POST"){
-    $email = test_input($_POST["email"]);
+if (isset($_POST["new_email"])){
+  $email = test_input($_POST["email"]);
     $text_area = test_input($_POST["textarea"]);
 
     echo "Paldies, " . $email . ". Tavs teksts: " . $text_area . " ir nosūtīts!"; 
