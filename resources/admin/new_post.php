@@ -1,4 +1,4 @@
-<form name="admin_add"  method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+<form name="admin_add"  method="POST" action="<?php echo htmlspecialchars($_SERVER["HTTP_REFERER"]); ?>">
   <div class="form-group">
     <label for="text">Posta nosaukums</label>
     <input type="text" name="name" class="form-control">
