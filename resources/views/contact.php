@@ -20,10 +20,8 @@ var total_real = "<?php echo $total_Sum; ?>";
     <textarea class="form-control" name="textarea" rows="3"></textarea>
   </div>
   <div class="form group">
-  <input type="text" class="form-control" name="captcha"
-                data-bv-callback="true"
-                data-bv-callback-message="Wrong answer"
-                data-bv-callback-callback="checkCaptcha" />
+  <label for="captcha"><?php echo "Cik ir " . $first_Number . " + " . $second_Number; ?></label>
+  <input type="number" name="total_sum_client" class="form-control">  
   <button type="submit" onclick="return check_Form()" class="btn btn-primary" name="new_email">Submit</button>
 </form>
 
