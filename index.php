@@ -8,18 +8,18 @@
   <link rel="stylesheet" type="text/css" href="../resources/style/style.css">
 </head>
   <body>
-      <?php require __DIR__ . '../resources/navi.php';?>
+      <?php require __DIR__ . '/resources/navi.php';?>
 
       <div class="jumbotron text-center">
-          <?php require __DIR__ . '../resources/jumbo.php';?>
+          <?php require __DIR__ . '/resources/jumbo.php';?>
       </div>
 
       <div class="container-fluid">
-          <?php require __DIR__ . '../resources/main.php';?>
+          <?php require __DIR__ . '/resources/main.php';?>
       </div>
 
   <footer>
-          <?php require __DIR__ . '../resources/footer.php';?>
+          <?php require __DIR__ . '/resources/footer.php';?>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
