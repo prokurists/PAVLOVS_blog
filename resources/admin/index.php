@@ -1,4 +1,12 @@
-<form name="admin_add"  method="POST" action="/admin/post/new">
+<?php
+if (isset($_POST["new_post"])){
+        $name = test_input($_POST["name"]);
+        $text_area = test_input($_POST["post_text"]);
+    
+        echo "Paldies, " . $name . ". Tavs teksts: " . $text_area . " ir nosūtīts!"; }
+
+?>
+<form name="new_post"  method="POST" action="#">
   <div class="form-group">
     <label for="text">Posta nosaukums</label>
     <input type="text" name="name" class="form-control">
