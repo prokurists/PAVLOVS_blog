@@ -1,3 +1,11 @@
+<?php
+  if ($_SERVER["REQUEST_METHOD"] == "POST"){
+    $name = $_POST["name"];
+    $text_area =$_POST["post_text"];
+
+    echo "Paldies, " . $name . ". Tavs teksts: " . $text_area . " ir nosūtīts!"; }
+
+?>
 <form name="admin_add"  method="POST" action="/post/new">
   <div class="form-group">
     <label for="text">Posta nosaukums</label>
@@ -10,11 +18,4 @@
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
-<?php
-  if ($_SERVER["REQUEST_METHOD"] == "POST"){
-    $name = $_POST["name"];
-    $text_area =$_POST["post_text"];
 
-    echo "Paldies, " . $name . ". Tavs teksts: " . $text_area . " ir nosūtīts!"; }
-
-?>
