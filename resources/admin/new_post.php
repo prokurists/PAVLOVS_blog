@@ -1,4 +1,4 @@
-<form name="admin_add"  method="POST" action="<?php echo htmlspecialchars($_SERVER["SCRIPT_NAME"]); ?>">
+<form name="admin_add"  method="POST" action="<?php echo $_SERVER["SCRIPT_NAME"]; ?>">
   <div class="form-group">
     <label for="text">Posta nosaukums</label>
     <input type="text" name="name" class="form-control">
