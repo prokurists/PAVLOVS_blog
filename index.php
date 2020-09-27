@@ -1,3 +1,6 @@
+<?php require __DIR__ . '/resources/script.php';?>
+<?php require __DIR__ . '/resources/db.php';?>
+
 <!DOCTYPE html>
 <html lang="lv">
 <head>
