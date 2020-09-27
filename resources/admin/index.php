@@ -6,7 +6,7 @@ if (isset($_POST["new_post"])){
         echo "Paldies, " . $name . ". Tavs teksts: " . $text_area . " ir nosūtīts!"; }
 
 ?>
-<form name="new_post"  method="POST" action="#">
+<form name="new_post"  method="POST">
   <div class="form-group">
     <label for="text">Posta nosaukums</label>
     <input type="text" name="name" class="form-control">
