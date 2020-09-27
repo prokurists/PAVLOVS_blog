@@ -8,7 +8,7 @@
     <label for="textarea">Teksts</label>
     <textarea class="form-control" name="post_text" rows="5"></textarea>
   </div> 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary" name="new_post">Submit</button>
 </form>
 <?php
 if (isset($_POST["new_post"])){
