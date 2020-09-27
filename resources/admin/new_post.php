@@ -9,7 +9,7 @@
 
 
 
-<form name="admin_add"  method="POST" action="">
+<form name="admin_add"  method="POST" action="/post/new">
   <div class="form-group">
     <label for="text">Posta nosaukums</label>
     <input type="text" name="name" class="form-control">
