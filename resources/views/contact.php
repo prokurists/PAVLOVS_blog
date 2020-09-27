@@ -27,8 +27,8 @@ var total_real = "<?php echo $total_Sum; ?>";
 
 <?php
 if (isset($_POST["new_email"])){
-  $email = $_POST["email"];
-    $text_area = $_POST["textarea"];
+  $email = test_input($_POST["email"]);
+  $text_area = test_input($_POST["textarea"]);
 
     echo "Paldies, " . $email . ". Tavs teksts: " . $text_area . " ir nosūtīts!"; 
 

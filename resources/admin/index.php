@@ -12,9 +12,9 @@
 </form>
 <?php
 if (isset($_POST["new_post"])){
-        $name = $_POST["name"];
-        $text_area = $_POST["post_text"];
+    $post_name = test_input($_POST["name"]);
+    $post_text = test_input($_POST["post_text"]);
     
-        echo "Paldies, " . $name . ". Tavs teksts: " . $text_area . " ir nosūtīts!"; }
+        echo "Paldies, " . $post_name . ". Tavs teksts: " . $post_text . " ir nosūtīts!"; }
 
 ?>
