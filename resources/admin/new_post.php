@@ -10,7 +10,8 @@
   <button type="submit" class="btn btn-primary" name="new_post">Submit</button>
 </form>
 <?php
-if ((isset($_POST["new_post"]) && isset($_SESSION["adminSession"])){
+if ((isset($_POST["new_post"]) && isset($_COOKIE["user"]))){
+
     $post_name = test_input($_POST["name"]);
     $post_text = test_input($_POST["post_text"]);
   
