@@ -4,6 +4,6 @@
 </div>
 
 <?php 
-if ($alert=true){
+if ($alert != ""){
   getAllert();
   } ?>
