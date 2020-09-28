@@ -1,17 +1,15 @@
 <h1>Ielogojies iekšā lūdzu</h1>
 <form name="admin_Login" method="post">
-
-  <div class="container">
-    <label for="uname"><b>Lietotājvārds</b></label>
-    <input type="text" placeholder="Enter Username" name="admin_name" required>
-
-    <label for="psw"><b>Parole</b></label>
-    <input type="password" placeholder="Enter Password" name="admin_password" required>
-
-    <button type="submit" name="admin_Login">Login</button>
-
+<div class="form-group">
+    <label for="email">Lietotājvārds</label>
+    <input type="email" name="admin_name" class="form-control" placeholder="Enter email" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Parole:</label>
+    <input type="password" name="admin_password" class="form-control" placeholder="Enter password" id="pwd">
   </div>
 
+  <button type="submit" name="admin_Login" class="btn btn-primary">Submit</button>
 </form>
 <?php
 if (isset($_POST['admin_Login'])){
