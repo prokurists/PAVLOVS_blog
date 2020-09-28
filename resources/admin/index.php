@@ -16,7 +16,7 @@ if (isset($_POST["new_post"])){
     $post_text = test_input($_POST["post_text"]);
   
 $stmt = $conn->prepare("INSERT INTO posts (name, text) VALUES (?, ?)");
-$stmt->bind_param("ss", $name, $text);
+$stmt->bind_param("ss", $post_name, $post_text);
 
 $stmt->execute();
   echo "New records created successfully";
