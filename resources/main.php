@@ -23,7 +23,7 @@ switch ($request) {
         require __DIR__. '/admin/index.php';
         break;
         
-    case 'logout' :
+    case '/logout' :
         setcookie("user", "", time() - 3600);
         break;
 
