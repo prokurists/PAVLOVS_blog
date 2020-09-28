@@ -25,6 +25,7 @@ switch ($request) {
         
     case '/logout' :
         setcookie("user", "", time() - 3600);
+        echo "Esi izlogojies";
         break;
 
     default:
