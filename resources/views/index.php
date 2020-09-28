@@ -1,4 +1,3 @@
-<div class='card'>
 <?php
 
 $sql = "SELECT user, name, text, date FROM posts WHERE active = 1";
