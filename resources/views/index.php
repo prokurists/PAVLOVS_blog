@@ -8,7 +8,9 @@ if ($result->num_rows > 0) {
     echo "
     <div class='card'>
 <div class='card-body'>
-    <a href='#' onclick='deletePost(". $row["id"] . ")' class='close'>&times;</a>
+    <a href='#' onclick='";
+    deletePost($row["id"]);
+    echo"' class='close'>&times;</a>
     <h5 class='card-title'>" . $row["name"]. "</h5>
     <p class='card-text'>" . $row["text"]. "</p>
     <p class='card-text'><small class='text-muted'>" . $row["date"]. "</small></p>
