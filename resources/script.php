@@ -7,5 +7,9 @@ function test_input($data) {
     return $data;
   }
 
+function deletePost($data){
+    echo $data;   
+}
+
      
 ?>
