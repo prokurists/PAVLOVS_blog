@@ -24,3 +24,4 @@ $stmt->close();
 $conn->close();
 
 }
+<a href="/logout">Izlogoties</a>
