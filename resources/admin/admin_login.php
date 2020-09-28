@@ -20,7 +20,7 @@ if (isset($_POST['admin_Login'])){
 	
 	if ($admin_name == "admin" && $admin_password == "admin"){
 		setcookie(user, $admin_name, time() + (86400 * 30), "/admin"); // 86400 = 1 day
-		echo "Esi ielogojies";
+		header("Refresh:0");
 	}
 
 }
