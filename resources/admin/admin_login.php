@@ -20,6 +20,7 @@ if (isset($_POST["admin_Login"])){
 	
 	if ($admin_name == "admin" && $admin_password == "admin"){
 		$_SESSION["admin_Session"] == "admin";
+		echo "Esi ielogojies";
 	}
 
 }
