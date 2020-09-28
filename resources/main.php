@@ -18,7 +18,7 @@ switch ($request) {
         require __DIR__. '/admin/index.php';
         break;        
     case '/logout' :
-        setcookie("user", "", time() - 3600);
+        setcookie("user","",time()-3600);
         break;
     default:
         http_response_code(404);
