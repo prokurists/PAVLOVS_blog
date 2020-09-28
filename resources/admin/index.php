@@ -15,13 +15,10 @@ if (isset($_POST["new_post"])){
     $post_name = test_input($_POST["name"]);
     $post_text = test_input($_POST["post_text"]);
   
-$sql = "INSERT INTO MyGuests (name, text)
-VALUES (."'$post_name'"., ."'$post_text'".)";
+$stmt = $conn->prepare("INSERT INTO posts (name, text) VALUES (?, ?)");
+$stmt->bind_param("ss", $name, $text);
 
-if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
-} else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
-}
-
-$conn->close();
+$stmt->execute();
+  echo "New records created successfully";
+$stmt->close();
+;
