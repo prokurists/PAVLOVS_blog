@@ -21,4 +21,4 @@ $stmt->bind_param("ss", $name, $text);
 $stmt->execute();
   echo "New records created successfully";
 $stmt->close();
-;
+}
