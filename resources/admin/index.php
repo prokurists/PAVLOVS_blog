@@ -21,4 +21,6 @@ $stmt->bind_param("ss", $post_name, $post_text);
 $stmt->execute();
   echo "New records created successfully";
 $stmt->close();
+$conn->close();
+
 }
