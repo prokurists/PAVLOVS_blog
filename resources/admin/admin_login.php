@@ -19,7 +19,7 @@ if (isset($_POST['admin_Login'])){
     $admin_password = test_input($_POST["admin_password"]);
 	
 	if ($admin_name == "admin" && $admin_password == "admin"){
-		setcookie(user, $admin_name, time() + (86400 * 30), "/"); // 86400 = 1 day
+		setcookie(user, $admin_name, time() + (86400 * 30), "/admin"); // 86400 = 1 day
 		echo "Esi ielogojies";
 	}
 
