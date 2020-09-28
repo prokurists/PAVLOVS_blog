@@ -14,12 +14,12 @@
 
 </form>
 <?php
-if (isset($_POST["admin_Login"])){
+if (isset($_POST['admin_Login'])){
     $admin_name = test_input($_POST["admin_name"]);
     $admin_password = test_input($_POST["admin_password"]);
 	
 	if ($admin_name == "admin" && $admin_password == "admin"){
-		$_SESSION["admin_Session"] == "admin";
+		$_SESSION['admin_Session'] == 'admin';
 		echo "Esi ielogojies";
 	}
 
