@@ -8,7 +8,12 @@ function test_input($data) {
   }
 
 function deletePost($data){
-    return $data;   
+    $sql = "DELETE FROM posts WHERE id='".$data."'";
+    if ($conn->query($sql) === TRUE) {
+  echo "Record deleted successfully";
+} else {
+  echo "Error deleting record: " . $conn->error;
+}
 }
 
      
