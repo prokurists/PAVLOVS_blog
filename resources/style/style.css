@@ -9,10 +9,7 @@ body{
   background-color: white;
 }
 
-.container-fluid{
-  max-width: 80%;
-  margin: auto;
-}
+
 
 #top-container{
   border-radius: 5px;
