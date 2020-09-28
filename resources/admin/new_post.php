@@ -1,3 +1,4 @@
+<a href="/logout">Izlogoties</a>
 <form name="new_post"  method="POST">
   <div class="form-group">
     <label for="text">Posta nosaukums</label>
@@ -24,4 +25,3 @@ $stmt->close();
 $conn->close();
 
 }
-<a href="/logout">Izlogoties</a>
