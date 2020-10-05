@@ -1,5 +1,5 @@
 <div class="card-deck">
-  <div class="card bg-dark text-white">
+  <div class="card bg-light text-dark">
     <div class="card-header text-center">
       <p class="card-text">Izglītība</p>
     </div>
@@ -24,19 +24,19 @@
 
     </div>
   </div>
-  <div class="card bg-dark text-white">
+  <div class="card bg-light text-dark">
     <div class="card-header text-center">
       <p class="card-text">Darba pieredze</p>
     </div>
     <div class="card-body">LauremIpsum LauremIpsum LauremIpsum Darba pieredze </div>
   </div>
-  <div class="card bg-dark text-white">
+  <div class="card bg-light text-dark">
     <div class="card-header text-center">
       <p class="card-text">Hobiji</p>
     </div>
     <div class="card-body">LauremIpsum LauremIpsum LauremIpsum Hobiji</div>
   </div>
-  <div class="card bg-dark text-white">
+  <div class="card bg-light text-dark">
     <div class="card-header text-center">
       <p class="card-text">Pieredze programmēšanā</p>
     </div>
