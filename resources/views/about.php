@@ -12,14 +12,14 @@
 
       <p>Papildu izglītība:<br>
       Mācības pieaugušajiem VIAA projekts<br>
-      Tēma: Web portālu izstrāde. Modernās tīmekļa tehnoloģijas programmatūras izstrādei<br>
-      Gadgets<br>
-      Tēma:	Upselling mazumtirdzniecībā, 2018<br>
-      Gadgets<br>
-      Tēma:	Pārdošanas prasmju treniņš, 2017<br>
-      Gadgets<br>
-      Tēma:	Efektīvs darbs ar klientiem, 2016<br>
-      Gadgets<br>
+      Tēma: Web portālu izstrāde. Modernās tīmekļa tehnoloģijas programmatūras izstrādei<br></p>
+      <p>Gadgets<br>
+      Tēma:	Upselling mazumtirdzniecībā, 2018<br></p>
+      <p>Gadgets<br>
+      Tēma:	Pārdošanas prasmju treniņš, 2017<br></p>
+      <p>Gadgets<br>
+      Tēma:	Efektīvs darbs ar klientiem, 2016<br></p>
+      <p>Gadgets<br>
       Tēma:	Ekspertu ēras pārdošana, 2016</p>
 
     </div>
