@@ -4,4 +4,4 @@
 <?php if (isset($_COOKIE["user"])){
   echo "<a href='/logout'>Izlogoties</a>"; }
 else{
-  echo "<a href='/admin'>Admin cPanel</a>";} ?>
+  echo "<a href='/admin'>Ielogoties</a>";} ?>

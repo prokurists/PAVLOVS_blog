@@ -19,6 +19,10 @@ body{
   margin:auto;
   border-radius: 2em;
 }
+#form_login{
+  width:70%;
+  margin:auto;
+}
 
 .navbar{
   background-color: white;
