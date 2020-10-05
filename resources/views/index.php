@@ -1,6 +1,6 @@
 <?php
 
-$sql = "SELECT id, user, name, text, date FROM posts WHERE active = 1 ORDER BY id";
+$sql = "SELECT id, user, name, text, date FROM posts WHERE active = 1 ORDER BY id ASC";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
