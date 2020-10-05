@@ -10,7 +10,7 @@ if ($result->num_rows > 0) {
 <div class='card-body'>
     <h5 class='card-title'>" . $row["name"]. "</h5>
     <p class='card-text'>" . $row["text"]. "</p>
-    <p class='card-text'><small class='text-muted'>" . $row["date"]. "</small></p>
+    <p class='card-text'><small class='text-muted'>Ievietots: " . $row["date"]. " Ievietoja: " . $row["user"]. "</small></p>
 </div></div><br>";
   }
 } else {
@@ -19,5 +19,3 @@ if ($result->num_rows > 0) {
 
 
 ?>
-
-
