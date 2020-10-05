@@ -1,4 +1,6 @@
 <?php
+ if isset($_COOKIE["user"]){
+  echo "<a href='/admin'>Jauns posts</a>";}
 
 $sql = "SELECT id, user, name, text, date FROM posts WHERE active = 1 ORDER BY id DESC";
 $result = $conn->query($sql);
