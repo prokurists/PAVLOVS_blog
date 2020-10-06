@@ -1,14 +1,3 @@
-<?php
-  $first_Number = rand(0,10);
-  $second_Number = rand(0,10);
-  $total_Sum = $first_Number + $second_Number;
-?>
-
-<script>
-var total_real = "<?php echo $total_Sum; ?>";
-
-</script>
-
 <form name="new_email" id="contactUs"  method="POST">
   <div class="form-group">
     <label for="email">E-pasta adrese</label>
@@ -24,9 +13,4 @@ var total_real = "<?php echo $total_Sum; ?>";
   <button type="submit" onclick="return check_Form()" class="btn btn-primary" name="new_email">Submit</button>
 </form>
 
-<?php
-
-
-  
-?>
 

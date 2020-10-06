@@ -1,5 +1,5 @@
-<?php require __DIR__ . '/resources/script.php';?>
 <?php require __DIR__ . '/.gitignore/db.php';?>
+<?php require __DIR__ . '/resources/script.php';?>
 <?php session_start();?>
 
 <!DOCTYPE html>

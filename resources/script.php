@@ -1,4 +1,15 @@
 <?php
+  $first_Number = rand(0,10);
+  $second_Number = rand(0,10);
+  $total_Sum = $first_Number + $second_Number;
+?>
+
+<script>
+var total_real = "<?php echo $total_Sum; ?>";
+
+</script>
+
+<?php
 
 if (isset($_POST["new_email"])){
   $email = test_input($_POST["email"]);
