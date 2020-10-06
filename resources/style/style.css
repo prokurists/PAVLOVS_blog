@@ -29,6 +29,10 @@ body{
   border: 1px;
 }
 
+#post_Full{
+  min-height: 500px;
+}
+
 .navbar{
   background-color: white;
   border-color: white;
