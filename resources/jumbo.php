@@ -2,6 +2,15 @@
 <h1 class="display-4">Aleksejs Porftolio</h1>
 <p class="lead">Fit fabricando faber.</p>
 </div>
+
+<?php if(!empty($alert)) {?>
+    <div class="alert <?php echo $resMessage['status']?>">
+      <?php echo $resMessage['message']?>
+    </div>
+    <?php }?>
+  </div>
+
+  
 <?php
 function checkError($alert){
 if ($alert == ""){
