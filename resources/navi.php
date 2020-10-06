@@ -8,13 +8,7 @@
       <a class="nav-link" href="/">Galvene</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/portfolio">Porftolio</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/about">Par mani</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/contact">Kontaktinformācija</a>
+      <a class="nav-link" href="/contact">Sakontaktēties</a>
     </li>
     </ul>
   </div>
