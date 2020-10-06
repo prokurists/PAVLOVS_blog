@@ -1,4 +1,17 @@
 <?php
+    function deletePost($id){
+
+        $deletePostSql = "DELETE FROM posts WHERE id=".$id."";
+
+        if ($conn->query($deletePostSql) === TRUE) {
+          echo "Record deleted successfully";
+        } else {
+          echo "Error deleting record: " . $conn->error;
+        }
+        
+        $conn->close();
+    }
+    
     $sql = "SELECT id, user, name, text, date FROM posts WHERE id = ".$number."";
     $result = $conn->query($sql);
     
@@ -17,18 +30,5 @@
       }
     } else {
       echo "0 results";
-    }
-
-    function deletePost($id){
-
-        $deletePostSql = "DELETE FROM posts WHERE id=".$id."";
-
-        if ($conn->query($deletePostSql) === TRUE) {
-          echo "Record deleted successfully";
-        } else {
-          echo "Error deleting record: " . $conn->error;
-        }
-        
-        $conn->close();
     }
 ?>
