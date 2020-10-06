@@ -8,13 +8,22 @@ $showPosts = "SELECT * FROM posts";
 
   if ($result->num_rows > 0) {
       while($row = $result->fetch_assoc()) {
-    echo "<div class='row'>";
-    echo "<form action='#' method='POST'>";
-    echo "<div class='col-sm-8'>";
-    echo $row["name"];
-    echo "<input type='hidden' name='postId' value='". $row["id"]."'>";
-    echo "</div><div class='col-sm-4'>";
-    echo "<button type='submit' class='btn btn-danger' name='postDelete' value='Submit'>Delete</button></form></div></div> "  ;    
+        echo "
+        <form action='#' method='POST'>
+        <input type='hidden' name='postId' value='". $row["id"]."'>
+         <table class='table'>
+            <thead>
+              <tr>
+                <th>Post name</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>".$row["name"]."</td>
+                <td><button type='submit' class='btn btn-danger' name='postDelete' value='Submit'>Delete</button></form></td>
+              </tr>
+            </tbody>"   
   }
     } else {
   echo "No posts right now to delete.";}
