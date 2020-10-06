@@ -6,7 +6,6 @@
 function checkError($alert){
 if ($alert == ""){
   // nekas nenotiek
-  echo "nav kludas";
 }
 else{
   echo "
