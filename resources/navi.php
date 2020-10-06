@@ -13,6 +13,7 @@
     <li class='nav-item'>
       <a class='nav-link' href='/admin'>cPanel</a>
     </li>
+    <?php echo $adminPanelLinks;  ?>
 </ul>
   </div>
 </nav>
