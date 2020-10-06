@@ -1,5 +1,6 @@
 <?php
 $request = $_SERVER['REQUEST_URI'];
+$number = @end(explode("/",$_SERVER['REQUEST_URI']));
 
 switch ($request) {
     case '/' :
@@ -22,8 +23,7 @@ switch ($request) {
         header('Location: http://www.pavlovs.lv');
         break;
     case '/1' :
-    echo "viens";
-    break;    
+    echo $number;
     default:
         http_response_code(404);
         require __DIR__ . '/views/404.php';
