@@ -53,10 +53,10 @@ if (isset($_POST['admin_Login'])){
     "status" => "alert-success",
     "message" => "Login successful!");
     header("Refresh: 3; URL=$refreshUrl");
-  else{
+  }else{
   $resMessage = array(
         "status" => "alert-danger",
-        "message" => "Your ID or password is incorrect!");}}}
+        "message" => "Your ID or password is incorrect!");}}
 
 if (isset($_POST["new_email"])){
   $email = test_input($_POST["email"]);
