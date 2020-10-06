@@ -5,6 +5,9 @@
     if ($result->num_rows > 0) {
       while($row = $result->fetch_assoc()) {
         echo "
+        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+        <span aria-hidden='true'>&times;</span>
+      </button>
         <div class='card'>
     <div class='card-body'>
         <h5 class='card-title'>" . $row["name"]. "</h5>
