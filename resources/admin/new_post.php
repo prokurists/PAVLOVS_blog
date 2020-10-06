@@ -1,3 +1,5 @@
+<?php if(isset($_COOKIE['user'])) { ?>
+
 <form name="new_post"  method="POST">
   <div class="form-group">
     <label for="text">Posta nosaukums</label>
@@ -9,19 +11,24 @@
   </div>
   <button type="submit" class="btn btn-primary" name="new_post">Submit</button>
 </form>
+
 <?php
-if ((isset($_POST["new_post"]) && isset($_COOKIE["user"]))){
+
+if (isset($_POST["new_post"])){
 
     $post_name = test_input($_POST["name"]);
     $post_text = test_input($_POST["post_text"]);
 
-$stmt = $conn->prepare("INSERT INTO posts (name, text) VALUES (?, ?)");
-$stmt->bind_param("ss", $post_name, $post_text);
+    $stmt = $conn->prepare("INSERT INTO posts (name, text) VALUES (?, ?)");
+    $stmt->bind_param("ss", $post_name, $post_text);
 
-$stmt->execute();
-  echo "Pievienots jauns ieraksts";
-  header('Location: http://www.pavlovs.lv');
-$stmt->close();
-$conn->close();
+    $stmt->execute();
+    echo "Pievienots jauns ieraksts";
 
+    $stmt->close();
+    $conn->close();
+}
+}
+else{
+  echo "No permisions";
 }
