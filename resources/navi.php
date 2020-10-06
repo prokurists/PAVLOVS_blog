@@ -9,7 +9,8 @@
     </li>
     <li class="nav-item">
       <a class="nav-link" href="/contact">Contact us</a>
-    </li>
+    </li></ul>
+    <ul class="nav navbar-nav navbar-right">
     <li class='nav-item'>
       <a class='nav-link' href='/admin'>cPanel</a>
     </li>
@@ -17,7 +18,6 @@
     <li class='nav-item'><a class='nav-link' href='/post/new'>New Post</a></li>
 	<li class='nav-item'><a class='nav-link' href='/post/delete'>Delete Post</a></li>
 	<li class='nav-item'><a class='nav-link' href='/logout'>Logout</a></li></ul>
-  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 
     <?php } ?>
 </ul>
