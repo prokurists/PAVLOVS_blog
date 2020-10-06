@@ -17,7 +17,6 @@ $showPosts = "SELECT * FROM posts";
         echo "
         <form action='#' method='POST'>
         <input type='hidden' name='postId' value='". $row["id"]."'>
-         <table class='table'>
             <tbody>
               <tr>
                 <td colspan='8'>".$row["name"]."</td>
