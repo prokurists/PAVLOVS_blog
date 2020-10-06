@@ -40,7 +40,7 @@ function showAllPosts($conn){
   <div class='col-md-8 position-static p-4 pl-md-0'>
   <h5 class='mt-0'>" . $row["name"]. "</h5>
   <p>" . $row["text"]. "</p>
-  <a href='". $row["id"]."' class='btn btn-primary stretched-link'>Read more</a>
+  <a href='". $row["id"]."' class='btn btn-primary stretched-link'>Read more</a><br>
   <small class='text-muted'>Ievietots: " . $row["date"]. " Ievietoja: " . $row["user"]. "</small>
   </div><hr>"; }
   } else {  echo "No posts right now...";}}
@@ -85,7 +85,7 @@ if ((isset($_POST["new_post"])) && (isset($_COOKIE['user']))){
   $stmt = $conn->prepare("INSERT INTO posts (name, text) VALUES (?, ?)");
   $stmt->bind_param("ss", $post_name, $post_text);
   $stmt->execute();
-  header("Refresh: 3; URL=$refreshUrl");   
+  header("Refresh: 2; URL=www.pavlovs.lv");   
   $resMessage = array(
     "status" => "alert-success",
     "message" => "Your POST is added!");
@@ -101,7 +101,7 @@ if ((isset($_POST["postDelete"])) && (isset($_COOKIE['user']))){
 
       if ($conn->query($deletePost) === TRUE) {
 
-      header("Refresh: 3; URL=$refreshUrl");
+      header("Refresh: 2; URL=$refreshUrl");
       $resMessage = array(
           "status" => "alert-success",
           "message" => "Your POST is deleted!");}
@@ -114,7 +114,7 @@ if (isset($_POST['admin_Login'])){
 
  if ($admin_name == "admin" && $admin_password == "admin"){
   setcookie(user, $admin_name, time() + (86400 * 30), "/");
-  header("Refresh: 3; URL=$refreshUrl");
+  header("Refresh: 2; URL=www.pavlovs.lv");
   $resMessage = array(
     "status" => "alert-success",
     "message" => "Login successful!");
@@ -131,7 +131,7 @@ if (isset($_POST["new_email"])){
   $stmt->bind_param("ss", $email, $text_area);
 
   $stmt->execute();
-  header("Refresh: 3; URL=$refreshUrl");
+  header("Refresh: 2; URL=$refreshUrl");
   $resMessage = array(
       "status" => "alert-success",
       "message" => "Your message is sent!");
