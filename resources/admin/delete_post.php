@@ -11,7 +11,7 @@ $showPosts = "SELECT * FROM posts";
     echo "<form action='#' method='POST'>";
     echo $row["name"];
     echo "<input type='hidden' name='postId' value='". $row["id"]."'>";
-    echo "<input type='submit' name='postDelete' value='Submit'></form> "  ;    
+    echo "<button type='submit' class='btn btn-warning' name='postDelete' value='Submit'></form> "  ;    
   }
     } else {
   echo "No posts right now to delete.";}
