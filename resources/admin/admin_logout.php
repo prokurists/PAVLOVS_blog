@@ -2,7 +2,7 @@
 <?php
 
 setcookie("user", "", time() - 3600);
-header( "refresh:5;Location: http://www.pavlovs.lv" );
+header( "refresh:5;url: http://www.pavlovs.lv" );
 
 
 
