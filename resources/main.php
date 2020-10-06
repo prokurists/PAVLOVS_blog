@@ -1,4 +1,4 @@
-<?php 
+<?php
 $request = $_SERVER['REQUEST_URI'];
 
 switch ($request) {
@@ -13,12 +13,13 @@ switch ($request) {
         break;
     case '/contact' :
         require __DIR__ . '/views/contact.php';
-        break;  
+        break;
     case '/admin' :
         require __DIR__. '/admin/index.php';
-        break;        
+        break;
     case '/logout' :
         setcookie("user","",time()-3600);
+        header('Location: http://www.pavlovs.lv');
         break;
     default:
         http_response_code(404);
