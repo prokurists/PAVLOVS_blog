@@ -20,7 +20,7 @@ switch ($request) {
         break;
 
     case '/admin/logout' :
-        require __DIR__. '/admin/admin_logout.php';
+        setcookie("user", "", time() - 3600);
         break;
 
     case '/post/new' :
