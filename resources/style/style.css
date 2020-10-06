@@ -39,12 +39,12 @@ body{
 }
 
 .fa {
-  padding: 10px;
-  font-size: 5px;
-  width: 30px;
+  padding: 15px;
+  font-size: 7px;
+  width: 35px;
   text-align: center;
   text-decoration: none;
-  margin: 2px 1px;
+  margin: 3px 2px;
 }
 
 .navbar{
