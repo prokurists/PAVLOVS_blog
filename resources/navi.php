@@ -13,9 +13,11 @@
     <li class='nav-item'>
       <a class='nav-link' href='/admin'>cPanel</a>
     </li>
+    <?php if(isset($_COOKIE['user'])) { ?>
     <li class='nav-item'><a class='nav-link' href='/post/new'>New Post</a></li>
 	<li class='nav-item'><a class='nav-link' href='/post/delete'>Delete Post</a></li>
 	<li class='nav-item'><a class='nav-link' href='/admin/logout'>Logout</a></li></ul>
+    <?php } ?>
 </ul>
   </div>
 </nav>
