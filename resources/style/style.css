@@ -33,6 +33,11 @@ body{
   min-height: 500px;
 }
 
+#contactUs{
+  width: 60%;
+  margin:auto;
+}
+
 .navbar{
   background-color: white;
   border-color: white;
