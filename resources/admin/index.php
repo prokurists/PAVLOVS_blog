@@ -1,9 +1,10 @@
 <?php
 
 if(isset($_COOKIE['user'])) {
-	include __DIR__ . '/new_post.php';}
-else{
-	include __DIR__ . '/admin_login.php';}
+	echo "<h1> Admin panelis </h1>"; }
+	else{
+    http_response_code(404);
+    require __DIR__ . '/views/404.php';
 
 
 ?>
