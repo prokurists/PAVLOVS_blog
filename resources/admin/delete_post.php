@@ -20,8 +20,8 @@ $showPosts = "SELECT * FROM posts";
          <table class='table'>
             <tbody>
               <tr>
-                <td>".$row["name"]."</td>
-                <td><button type='submit' class='btn btn-danger' name='postDelete' value='Submit'>Delete</button></form></td>
+                <td colspan='8'>".$row["name"]."</td>
+                <td colspan='4'><button type='submit' class='btn btn-danger' name='postDelete' value='Submit'>Delete</button></form></td>
               </tr>
             </tbody>  </table>
             ";   
