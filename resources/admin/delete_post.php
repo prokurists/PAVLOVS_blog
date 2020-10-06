@@ -1,7 +1,1 @@
-<?php
-
-    setcookie("user","",time()-3600);
-    header('Location: http://www.pavlovs.lv');
-
-
-?>
+<h1>Delete Post</h1>
