@@ -107,7 +107,7 @@ function showAllPosts($conn){
   } else {  echo "No posts right now...";}}
 
 
-  function showPostsD ($conn){
+function showPostsD ($conn){
     $showPosts = "SELECT * FROM posts";
     $result = $conn->query($showPosts);
     
