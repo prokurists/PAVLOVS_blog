@@ -3,7 +3,7 @@
 <?php
 
 
-$showPosts = "SELECT id, name, FROM posts";
+$showPosts = "SELECT * FROM posts";
     $result = $conn->query($showPosts);
 
   if ($result->num_rows > 0) {
