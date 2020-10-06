@@ -8,10 +8,10 @@ $sql = "SELECT id, name, FROM posts ORDER BY id DESC";
 
   if ($result->num_rows > 0) {
       while($row = $result->fetch_assoc()) {
-    echo "<form action='/post/delete'>";
+    echo "<form action='#' method='POST'>";
     echo $row["name"];
     echo "<input type='hidden' name='postId' value='". $row["id"]."'>";
-    echo "<input type='submit' name='postDelete' value='Submit'></form> "      
+    echo "<input type='submit' name='postDelete' value='Submit'></form> "  ;    
   }
     } else {
   echo "No posts right now...";}
