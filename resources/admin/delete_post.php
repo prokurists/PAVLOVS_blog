@@ -1,11 +1,13 @@
-<h1>Delete Post</h1>
 <table class="table">
-<thead>
-              <tr>
-                <th colspan='4'>Post name</th>
-                <th colspan='4'>Action</th>
-              </tr>
-            </thead>
+  <caption>List of posts</caption>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Post name</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
 <?php
 
 
@@ -14,16 +16,18 @@ $showPosts = "SELECT * FROM posts";
 
   if ($result->num_rows > 0) {
       while($row = $result->fetch_assoc()) {
+
         echo "
         <form action='#' method='POST'>
         <input type='hidden' name='postId' value='". $row["id"]."'>
-            <tbody>
-              <tr>
-                <td colspan='4'>".$row["name"]."</td>
-                <td colspan='4'><button type='submit' class='btn btn-danger' name='postDelete' value='Submit'>Delete</button></form></td>
-              </tr>
-            </tbody>
-            ";   
+        
+        <tbody>
+        <tr>
+          <th scope='row'>1</th>
+          <td>".$row["name"]."</td>
+          <td><button type='submit' class='btn btn-danger' name='postDelete' value='Submit'>Delete</button></form></td>
+        </tr>
+        ";
   }
     } else {
   echo "No posts right now to delete.";}
@@ -47,4 +51,5 @@ $showPosts = "SELECT * FROM posts";
   
 
 
-?>  </table>
+?>    </tbody>
+</table>
