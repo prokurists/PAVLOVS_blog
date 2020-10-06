@@ -3,14 +3,11 @@
 body{
   width: 80%;
   margin:auto;
-
 }
 
 .jumbotron{
   background-color: white;
 }
-
-
 
 #top-container{
   border-radius: 5px;
@@ -19,7 +16,8 @@ body{
   margin:auto;
   border-radius: 2em;
 }
-#form_fix{
+
+.form_fix{
   width:50%;
   margin:auto;
   border: 1px;
