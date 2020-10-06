@@ -1,4 +1,4 @@
-<form name="new_post"  id="form_fix"  method="POST">
+<form name="new_post" id="formFix"  method="POST">
   <div class="form-group">
     <label for="text">Posta nosaukums</label>
     <input type="text" name="name" class="form-control">
