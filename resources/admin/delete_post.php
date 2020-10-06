@@ -23,7 +23,7 @@ $showPosts = "SELECT * FROM posts";
                 <td>".$row["name"]."</td>
                 <td><button type='submit' class='btn btn-danger' name='postDelete' value='Submit'>Delete</button></form></td>
               </tr>
-            </tbody>"   
+            </tbody>";   
   }
     } else {
   echo "No posts right now to delete.";}
