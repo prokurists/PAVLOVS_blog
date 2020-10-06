@@ -7,7 +7,7 @@
       while($row = $result->fetch_assoc()) {
     echo "
     <div class='media position-relative'>
-    <img src='../resources/images/1.jpg' class='mr-3' alt=''>
+    <img src='../resources/images/1.jpg' class='mr-3' id='images' alt=''>
     <div class='media-body'>
       <h5 class='mt-0'>" . $row["name"]. "</h5>
       <p>" . $row["text"]. "</p>
