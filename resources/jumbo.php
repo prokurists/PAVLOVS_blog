@@ -3,7 +3,7 @@
 <p class="lead">Fit fabricando faber.</p>
 </div>
 
-<?php if(!empty($alert)) {?>
+<?php if(!empty($resMessage)) {?>
     <div class="alert <?php echo $resMessage['status']?>">
       <?php echo $resMessage['message']?>
     </div>
