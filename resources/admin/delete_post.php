@@ -23,7 +23,7 @@ $showPosts = "SELECT * FROM posts";
         
         <tbody>
         <tr>
-          <th scope='row'>1</th>
+          <th scope='row'>". $row["id"]."</th>
           <td>".$row["name"]."</td>
           <td><button type='submit' class='btn btn-danger' name='postDelete' value='Submit'>Delete</button></form></td>
         </tr>
