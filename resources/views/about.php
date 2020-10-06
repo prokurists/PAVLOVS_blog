@@ -1,9 +1,0 @@
-<h1>Par mani</h1>
-<p>LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum
-LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum
-LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum
-LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum
-LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum
-LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum
-LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum LauremIpsum
-</p>
