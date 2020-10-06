@@ -21,6 +21,9 @@ switch ($request) {
         setcookie("user","",time()-3600);
         header('Location: http://www.pavlovs.lv');
         break;
+    case '/1' :
+    echo "viens";
+    break;    
     default:
         http_response_code(404);
         require __DIR__ . '/views/404.php';
