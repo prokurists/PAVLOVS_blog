@@ -24,7 +24,7 @@ switch ($request) {
         break;
 
     case '/' AND $number :
-        echo $number;
+        require __DIR__ . '/views/post.php';
         break;
 
     default:
