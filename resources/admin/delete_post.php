@@ -22,7 +22,7 @@ $showPosts = "SELECT * FROM posts";
                 <td colspan='8'>".$row["name"]."</td>
                 <td colspan='4'><button type='submit' class='btn btn-danger' name='postDelete' value='Submit'>Delete</button></form></td>
               </tr>
-            </tbody>  </table>
+            </tbody>
             ";   
   }
     } else {
@@ -47,4 +47,4 @@ $showPosts = "SELECT * FROM posts";
   
 
 
-?>
+?>  </table>
