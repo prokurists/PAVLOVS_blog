@@ -6,13 +6,16 @@
   if ($result->num_rows > 0) {
       while($row = $result->fetch_assoc()) {
     echo "
-    <div class='card'>
-    <div class='card-body'>
-    <h5 class='card-title'>" . $row["name"]. "</h5>
-    <p class='card-text'>" . $row["text"]. "</p>
-    <p class='card-text'><small class='text-muted'>Ievietots: " . $row["date"]. " Ievietoja: " . $row["user"]. "</small></p>
-    <a href='". $row["id"]."' class='btn btn-primary stretched-link'>Read more</a>
-    </div></div><br>";
+    <div class='row no-gutters bg-light position-relative'>
+    <div class='col-md-6 mb-md-0 p-md-4'>
+      <img src='../resources/images/1.jpg' class='w-100' alt=''>
+    </div>
+    <div class='col-md-6 position-static p-4 pl-md-0'>
+      <h5 class='mt-0'>" . $row["name"]. "</h5>
+      <p>" . $row["text"]. "</p>
+      <a href='". $row["id"]."' class='stretched-link'>Read more</a>
+    </div>
+  </div>";
   }
     } else {
   echo "No posts right now...";}
