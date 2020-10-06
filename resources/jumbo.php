@@ -1,9 +1,9 @@
 <div class="container" id="top-container">
 <h1 class="display-4">Aleksejs Porftolio</h1>
-<p class="lead">Esmu pilnīgi pārliecināts, ka Tu esi šeit!</p>
+<p class="lead">Fit fabricando faber.</p>
 </div>
 
-<?php 
+<?php
 if ($alert != ""){
   echo "
   <div class='alert alert-warning alert-dismissible fade show' role='alert'>
