@@ -15,7 +15,7 @@
     <?php if (isset($_COOKIE["user"])){
       echo "<li class='nav-item'><a class='nav-link' href='/logout'>Izlogoties</a></li>"; }
     else{
-      echo "<li class='nav-item'><a class='nav-link' href='/admin'>Admin panelis</a</li>";} ?>
+      echo "<li class='nav-item'><a class='nav-link' href='/admin'>Admin panelis</a></li>";} ?>
 
   </div>
 </nav>
