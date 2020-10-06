@@ -19,7 +19,7 @@ $showPosts = "SELECT * FROM posts";
         <input type='hidden' name='postId' value='". $row["id"]."'>
             <tbody>
               <tr>
-                <td colspan='8'>".$row["name"]."</td>
+                <td colspan='4'>".$row["name"]."</td>
                 <td colspan='4'><button type='submit' class='btn btn-danger' name='postDelete' value='Submit'>Delete</button></form></td>
               </tr>
             </tbody>
