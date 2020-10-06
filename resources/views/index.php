@@ -1,6 +1,6 @@
   
 <div class='row no-gutters position-relative'>
 
-    <?php  showAllPosts(); ?> 
+    <?php  showAllPosts($conn); ?> 
 
 </div>
