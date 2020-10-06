@@ -66,3 +66,28 @@ footer{
   padding-top: 20px;
   text-align: center;
 }
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+  #new_post{
+    width:100%;
+
+  }
+  
+  #admin_login{
+    width:100%;
+
+  }
+  
+  #postFull{
+    min-height: 100px;
+  }
+  
+  #contactUs{
+    width:100%;
+
+  }
+}
