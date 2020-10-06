@@ -14,7 +14,8 @@
       <h5 class='mt-0'>" . $row["name"]. "</h5>
       <p>" . $row["text"]. "</p>
       <a href='". $row["id"]."' class='btn btn-primary stretched-link'>Read more</a>
-      </div>
+      <small class='text-muted'>Ievietots: " . $row["date"]. " Ievietoja: " . $row["user"]. "</small>
+      </div><hr>
   ";
   }
     } else {
