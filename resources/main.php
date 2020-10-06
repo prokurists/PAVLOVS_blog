@@ -22,7 +22,8 @@ switch ($request) {
         setcookie("user","",time()-3600);
         header('Location: http://www.pavlovs.lv');
         break;
-    case '/' AND $number:
+        
+    case '/' + $number:
     echo $number;
     default:
         http_response_code(404);
