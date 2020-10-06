@@ -1,5 +1,10 @@
 <h1>Delete Post</h1>
-
+<thead>
+              <tr>
+                <th>Post name</th>
+                <th>Action</th>
+              </tr>
+            </thead>
 <?php
 
 
@@ -12,12 +17,6 @@ $showPosts = "SELECT * FROM posts";
         <form action='#' method='POST'>
         <input type='hidden' name='postId' value='". $row["id"]."'>
          <table class='table'>
-            <thead>
-              <tr>
-                <th>Post name</th>
-                <th>Action</th>
-              </tr>
-            </thead>
             <tbody>
               <tr>
                 <td>".$row["name"]."</td>
