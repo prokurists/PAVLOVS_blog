@@ -11,26 +11,4 @@
   </div>
   <button type="submit" class="btn btn-primary" name="new_post">Submit</button>
 </form>
-
-<?php
-
-if (isset($_POST["new_post"])){
-
-    $post_name = test_input($_POST["name"]);
-    $post_text = test_input($_POST["post_text"]);
-
-    $stmt = $conn->prepare("INSERT INTO posts (name, text) VALUES (?, ?)");
-    $stmt->bind_param("ss", $post_name, $post_text);
-
-    $stmt->execute();
-    echo "Added new post.";
-    header('Location: http://www.pavlovs.lv');
-
-
-    $stmt->close();
-    $conn->close();
-}
-}
-else{
-  echo "No permisions";
-}
+<?php }?>
