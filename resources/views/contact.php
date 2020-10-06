@@ -9,7 +9,6 @@ var total_real = "<?php echo $total_Sum; ?>";
 
 </script>
 
-<h3> Ja vēlies sazināties ar mani, lūdzu aizpildi formu </h3>
 <form name="new_email" id="contactUs"  method="POST">
   <div class="form-group">
     <label for="email">E-pasta adrese</label>
@@ -26,6 +25,7 @@ var total_real = "<?php echo $total_Sum; ?>";
 </form>
 
 <?php
+
 if (isset($_POST["new_email"])){
   $email = test_input($_POST["email"]);
   $text_area = test_input($_POST["textarea"]);
@@ -33,4 +33,5 @@ if (isset($_POST["new_email"])){
     echo "Paldies, " . $email . ". Tavs teksts: " . $text_area . " ir nosūtīts!"; 
 
   }
+  
 ?>
