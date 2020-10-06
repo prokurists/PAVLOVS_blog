@@ -2,8 +2,8 @@
 <table class="table">
 <thead>
               <tr>
-                <th>Post name</th>
-                <th>Action</th>
+                <th colspan='4'>Post name</th>
+                <th colspan='4'>Action</th>
               </tr>
             </thead>
 <?php
