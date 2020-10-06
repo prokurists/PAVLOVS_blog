@@ -8,7 +8,7 @@ if(isset($_COOKIE['user'])) {
 	<li class='nav-item'><a class='nav-link' href='/admin/logout'>Logout</a></li></ul>";	
 
 	} else {
-		header('Location: http://www.pavlovs.lv/admin/login');
+        require __DIR__. '/admin/admin_login.php';
 	}
 
 
