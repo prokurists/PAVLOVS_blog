@@ -1,6 +1,6 @@
 <?php
  if (isset($_COOKIE["user"])){
-  echo "<button type='button' class='btn-primary' onclick='/admin'>Jauns posts</button>";}
+  echo "<button type='button' class='btn-primary' onclick='/admin'>Jauns posts</button><br>";}
 
 $sql = "SELECT id, user, name, text, date FROM posts WHERE active = 1 ORDER BY id DESC";
 $result = $conn->query($sql);
