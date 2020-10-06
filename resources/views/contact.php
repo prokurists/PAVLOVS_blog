@@ -20,7 +20,7 @@ var total_real = "<?php echo $total_Sum; ?>";
   </div>
   <div class="form group">
   <label for="captcha"><?php echo "Cik ir " . $first_Number . " + " . $second_Number; ?></label>
-  <input type="number" name="total_sum_client" class="form-control">  
+  <input type="number" name="total_sum_client" class="form-control">  <br>
   <button type="submit" onclick="return check_Form()" class="btn btn-primary" name="new_email">Submit</button>
 </form>
 
