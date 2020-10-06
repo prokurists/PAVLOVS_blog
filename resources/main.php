@@ -21,7 +21,6 @@ switch ($request) {
 
     case '/admin/logout' :
         setcookie("user","",time()-3600);
-        $adminPanelLinks = "";
         header('Location: http://www.pavlovs.lv');
         break;
 
