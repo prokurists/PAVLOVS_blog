@@ -14,7 +14,7 @@ $showPosts = "SELECT id, name, FROM posts";
     echo "<input type='submit' name='postDelete' value='Submit'></form> "  ;    
   }
     } else {
-  echo "No posts right now...";}
+  echo "No posts right now to delete.";}
 
 
 
