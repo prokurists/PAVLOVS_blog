@@ -30,8 +30,13 @@ if (isset($_POST["new_email"])){
   $email = test_input($_POST["email"]);
   $text_area = test_input($_POST["textarea"]);
 
-    echo "Paldies, " . $email . ". Tavs teksts: " . $text_area . " ir nosūtīts!"; 
+  $stmt = $conn->prepare("INSERT INTO contacts (email, text) VALUES (?, ?)");
+    $stmt->bind_param("ss", $email, $text);
 
-  }
+    $stmt->execute();
+    echo "Paldies, " . $email . ". Tavs teksts: " . $text_area . " ir nosūtīts!"; 
+    $stmt->close();
+    $conn->close();
+}
   
 ?>
