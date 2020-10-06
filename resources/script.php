@@ -1,4 +1,6 @@
 <?php
+  $refreshUrl=$_SERVER['REQUEST_URI'];
+
   $first_Number = rand(0,10);
   $second_Number = rand(0,10);
   $total_Sum = $first_Number + $second_Number;
@@ -12,22 +14,31 @@ var total_real = "<?php echo $total_Sum; ?>";
 if ((isset($_POST["new_post"])) && (isset($_COOKIE['user']))){
   $post_name = test_input($_POST["name"]);
   $post_text = test_input($_POST["post_text"]);
+
   $stmt = $conn->prepare("INSERT INTO posts (name, text) VALUES (?, ?)");
   $stmt->bind_param("ss", $post_name, $post_text);
   $stmt->execute();
+
   $resMessage = array(
     "status" => "alert-success",
     "message" => "Your POST is added!");
+    header("Refresh: 3; URL=$refreshUrl");   
+
   $stmt->close();
   $conn->close();}   
   
-if (isset($_POST["postDelete"])){  
+if ((isset($_POST["postDelete"])) && (isset($_COOKIE['user']))){  
+
       $postId = $_POST["postId"];
+
       $deletePost = "DELETE FROM posts WHERE id = '".$postId."'";
+
       if ($conn->query($deletePost) === TRUE) {
+
       $resMessage = array(
           "status" => "alert-success",
           "message" => "Your POST is deleted!");}
+
       $conn->close(); }
     
 
@@ -36,15 +47,16 @@ if (isset($_POST['admin_Login'])){
   $admin_password = test_input($_POST["admin_password"]);
 
  if ($admin_name == "admin" && $admin_password == "admin"){
-  setcookie(user, $admin_name, time() + (86400 * 30), "/"); // 86400 = 1 day
+  setcookie(user, $admin_name, time() + (86400 * 30), "/");
+
   $resMessage = array(
     "status" => "alert-success",
     "message" => "Login successful!");
-  header('Location: http://www.pavlovs.lv');}
+    header("Refresh: 3; URL=$refreshUrl");
   else{
   $resMessage = array(
         "status" => "alert-danger",
-        "message" => "Your ID or password is incorrect!");}}
+        "message" => "Your ID or password is incorrect!");}}}
 
 if (isset($_POST["new_email"])){
   $email = test_input($_POST["email"]);
@@ -57,6 +69,7 @@ if (isset($_POST["new_email"])){
   $resMessage = array(
       "status" => "alert-success",
       "message" => "Your message is sent!");
+      header("Refresh: 3; URL=$refreshUrl");
     $stmt->close();
     $conn->close();}
 
@@ -128,3 +141,6 @@ function test_input($data) {
 
 
 ?>
+
+
+
