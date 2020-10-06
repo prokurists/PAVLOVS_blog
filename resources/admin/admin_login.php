@@ -20,7 +20,8 @@ if (isset($_POST['admin_Login'])){
   		header('Location: http://www.pavlovs.lv');
 	}
 	else{
-	$alert = "Nesakrīt parole vai lietotājvārds";
+  $alert = "Nesakrīt parole vai lietotājvārds";
+  checkError($alert);
 	}
 }
 
