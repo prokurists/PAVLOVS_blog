@@ -34,9 +34,16 @@ if (isset($_POST["new_email"])){
     $stmt->bind_param("ss", $email, $text_area);
 
     $stmt->execute();
-    echo "Paldies, " . $email . ". Tavs teksts: " . $text_area . " ir nosūtīts!"; 
+    echo "
+    <div class='alert alert-warning alert-dismissible fade show' role='alert'>
+    <strong>Paldies, " . $email . " </strong>Tavs teksts: " . $text_area . " ir nosūtīts!
+    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+    <span aria-hidden='true'>&times;</span>
+    </button>
+  </div>"; 
     $stmt->close();
     $conn->close();
 }
   
 ?>
+
