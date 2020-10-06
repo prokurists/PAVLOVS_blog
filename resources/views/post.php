@@ -5,10 +5,10 @@
     if ($result->num_rows > 0) {
       while($row = $result->fetch_assoc()) {
         echo "
-        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+        <div class='card'>
+        <button type='button' class='close' onclick='deletePost(".$row["id"].")' data-dismiss='alert' aria-label='Close'>
         <span aria-hidden='true'>&times;</span>
       </button>
-        <div class='card'>
     <div class='card-body'>
         <h5 class='card-title'>" . $row["name"]. "</h5>
         <p class='card-text'>" . $row["text"]. "</p>
@@ -17,5 +17,18 @@
       }
     } else {
       echo "0 results";
+    }
+
+    function deletePost($id){
+
+        $deletePostSql = "DELETE FROM posts WHERE id=".$id."";
+
+        if ($conn->query($deletePostSql) === TRUE) {
+          echo "Record deleted successfully";
+        } else {
+          echo "Error deleting record: " . $conn->error;
+        }
+        
+        $conn->close();
     }
 ?>
