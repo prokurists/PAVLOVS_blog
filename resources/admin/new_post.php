@@ -1,6 +1,6 @@
 <?php if(isset($_COOKIE['user'])) { ?>
 
-<form name="new_post"  method="POST">
+<form name="new_post" id="new_post"  method="POST">
   <div class="form-group">
     <label for="text">Post name</label>
     <input type="text" name="name" class="form-control">
