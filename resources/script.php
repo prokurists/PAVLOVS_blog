@@ -85,11 +85,10 @@ if ((isset($_POST["new_post"])) && (isset($_COOKIE['user']))){
   $stmt = $conn->prepare("INSERT INTO posts (name, text) VALUES (?, ?)");
   $stmt->bind_param("ss", $post_name, $post_text);
   $stmt->execute();
-
+  header("Refresh: 3; URL=$refreshUrl");   
   $resMessage = array(
     "status" => "alert-success",
     "message" => "Your POST is added!");
-    header("Refresh: 3; URL=$refreshUrl");   
 
   $stmt->close();
   $conn->close();}   
@@ -102,11 +101,11 @@ if ((isset($_POST["postDelete"])) && (isset($_COOKIE['user']))){
 
       if ($conn->query($deletePost) === TRUE) {
 
+      header("Refresh: 3; URL=$refreshUrl");
       $resMessage = array(
           "status" => "alert-success",
           "message" => "Your POST is deleted!");}
-
-      $conn->close(); showPostsD($conn); }
+      $conn->close();}
     
 
 if (isset($_POST['admin_Login'])){
@@ -115,11 +114,10 @@ if (isset($_POST['admin_Login'])){
 
  if ($admin_name == "admin" && $admin_password == "admin"){
   setcookie(user, $admin_name, time() + (86400 * 30), "/");
-
+  header("Refresh: 3; URL=$refreshUrl");
   $resMessage = array(
     "status" => "alert-success",
     "message" => "Login successful!");
-    header("Refresh: 3; URL=$refreshUrl");
   }else{
   $resMessage = array(
         "status" => "alert-danger",
@@ -133,10 +131,10 @@ if (isset($_POST["new_email"])){
   $stmt->bind_param("ss", $email, $text_area);
 
   $stmt->execute();
+  header("Refresh: 3; URL=$refreshUrl");
   $resMessage = array(
       "status" => "alert-success",
       "message" => "Your message is sent!");
-      header("Refresh: 3; URL=$refreshUrl");
     $stmt->close();
     $conn->close();}
 
