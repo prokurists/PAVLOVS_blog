@@ -1,4 +1,4 @@
-<form name="new_email" id="contactUs"  method="POST">
+<form name="new_email" id="contactUs" method="POST" action="#">
   <div class="form-group">
     <label for="email">E-pasta adrese</label>
     <input type="email" name="email" class="form-control">
