@@ -24,6 +24,10 @@ switch ($request) {
         header('Location: http://www.pavlovs.lv');
         break;
 
+    case '/post/new' :
+        require __DIR__. '/admin/new_post.php';
+        break;
+
     case '/' AND $number :
         require __DIR__ . '/views/post.php';
         break;
