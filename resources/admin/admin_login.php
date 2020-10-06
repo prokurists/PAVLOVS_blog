@@ -1,4 +1,4 @@
-<form name="admin_Login"  method="post">
+<form name="admin_Login" method="post">
 <div class="form-group">
     <label for="text">Lietotājvārds</label>
     <input type="text" name="admin_name" class="form-control" id="text">

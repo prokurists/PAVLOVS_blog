@@ -1,9 +1,3 @@
-
-var errorMessage = <?php Print($error); ?>;
-if(errorMessage == "")  throw "";
-else throw errorMessage;
-
-
 function check_Form(){
 
     var email = document.forms["new_email"]["email"].value;

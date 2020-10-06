@@ -1,11 +1,13 @@
 <div class="container" id="top-container">
 <h1 class="display-4">Aleksejs Porftolio</h1>
 <p class="lead">Fit fabricando faber.</p>
-<p id="errorMessage"></p>
 </div>
 
 <?php
-if ($alert != ""){
+if ($alert == ""){
+  // nekas nenotiek
+}
+else{
   echo "
   <div class='alert alert-warning alert-dismissible fade show' role='alert'>
   <strong>Kļūda!</strong>" . $alert. "
