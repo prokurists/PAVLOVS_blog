@@ -25,9 +25,9 @@ if (isset($_POST["postDelete"])){
       $postId = $_POST["postId"];
       $deletePost = "DELETE FROM posts WHERE id = '".$postId."'";
       if ($conn->query($deletePost) === TRUE) {
-      header('Location: ' . $_SERVER['HTTP_REFERER']);
-      } else {
-      echo "Error deleting record: " . $conn->error;}
+      $resMessage = array(
+          "status" => "alert-success",
+          "message" => "Your POST is deleted!");}
       $conn->close(); }
     
 
@@ -35,8 +35,11 @@ if (isset($_POST['admin_Login'])){
   $admin_name = test_input($_POST["admin_name"]);
   $admin_password = test_input($_POST["admin_password"]);
 
-  if ($admin_name == "admin" && $admin_password == "admin"){
+ if ($admin_name == "admin" && $admin_password == "admin"){
   setcookie(user, $admin_name, time() + (86400 * 30), "/"); // 86400 = 1 day
+  $resMessage = array(
+    "status" => "alert-success",
+    "message" => "Login successful!");
   header('Location: http://www.pavlovs.lv');}
   else{
   $resMessage = array(
