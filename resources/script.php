@@ -53,7 +53,7 @@ function showPostsD ($conn){
     if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
     echo "
-            <form action='#' method='POST'>
+            <form action='' method='POST'>
             <input type='hidden' name='postId' value='". $row["id"]."'>           
             <tbody>
             <tr>
