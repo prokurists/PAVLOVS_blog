@@ -11,7 +11,7 @@ var total_real = "<?php echo $total_Sum; ?>";
 
 <?php
 
-function showOnePost($conn){
+function showOnePost($conn, $number){
 
 
   $sql = "SELECT id, user, name, text, date FROM posts WHERE id = ".$number."";

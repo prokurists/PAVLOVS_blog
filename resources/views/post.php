@@ -1,5 +1,5 @@
 <?php 
 
-  showOnePost($conn);
+  showOnePost($conn, $number);
 
 ?>
