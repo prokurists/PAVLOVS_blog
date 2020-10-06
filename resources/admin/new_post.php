@@ -20,6 +20,7 @@ $stmt->bind_param("ss", $post_name, $post_text);
 
 $stmt->execute();
   echo "Pievienots jauns ieraksts";
+  header('Location: http://www.pavlovs.lv');
 $stmt->close();
 $conn->close();
 

@@ -17,7 +17,7 @@ if (isset($_POST['admin_Login'])){
 
 	if ($admin_name == "admin" && $admin_password == "admin"){
 		setcookie(user, $admin_name, time() + (86400 * 30), "/"); // 86400 = 1 day
-		header("Refresh:0");
+  		header('Location: http://www.pavlovs.lv');
 	}
 	else{
 	$alert = "Nesakrīt parole vai lietotājvārds";
