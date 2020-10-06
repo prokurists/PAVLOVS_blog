@@ -3,8 +3,8 @@
 <?php
 
 
-$sql = "SELECT id, name, FROM posts ORDER BY id DESC";
-    $result = $conn->query($sql);
+$showPosts = "SELECT id, name, FROM posts";
+    $result = $conn->query($showPosts);
 
   if ($result->num_rows > 0) {
       while($row = $result->fetch_assoc()) {
