@@ -6,73 +6,58 @@
 
 <script>
 var total_real = "<?php echo $total_Sum; ?>";
-
 </script>
 
 <?php
-if ((isset($_POST["new_post"]) && isset($_COOKIE['user'])){
-
+if ((isset($_POST["new_post"])) && (isset($_COOKIE['user']))){
   $post_name = test_input($_POST["name"]);
   $post_text = test_input($_POST["post_text"]);
-
   $stmt = $conn->prepare("INSERT INTO posts (name, text) VALUES (?, ?)");
   $stmt->bind_param("ss", $post_name, $post_text);
-
   $stmt->execute();
   $resMessage = array(
     "status" => "alert-success",
     "message" => "Your POST is added!");
-
   $stmt->close();
-  $conn->close();}  
-
-
-
+  $conn->close();}   
   
-  
-if (isset($_POST["postDelete"])){
-  
+if (isset($_POST["postDelete"])){  
       $postId = $_POST["postId"];
       $deletePost = "DELETE FROM posts WHERE id = '".$postId."'";
-      $result = mysqli_query($conn, $sql_exp_del);
-  
-          if ($conn->query($deletePost) === TRUE) {
-              header('Location: ' . $_SERVER['HTTP_REFERER']);
-          } else {
-            echo "Error deleting record: " . $conn->error;
-          }
-          
-          $conn->close(); }
+      if ($conn->query($deletePost) === TRUE) {
+      header('Location: ' . $_SERVER['HTTP_REFERER']);
+      } else {
+      echo "Error deleting record: " . $conn->error;}
+      $conn->close(); }
     
 
 if (isset($_POST['admin_Login'])){
   $admin_name = test_input($_POST["admin_name"]);
   $admin_password = test_input($_POST["admin_password"]);
 
-      if ($admin_name == "admin" && $admin_password == "admin"){
-      setcookie(user, $admin_name, time() + (86400 * 30), "/"); // 86400 = 1 day
-      header('Location: http://www.pavlovs.lv');}
-        else{
-         $resMessage = array(
+  if ($admin_name == "admin" && $admin_password == "admin"){
+  setcookie(user, $admin_name, time() + (86400 * 30), "/"); // 86400 = 1 day
+  header('Location: http://www.pavlovs.lv');}
+  else{
+  $resMessage = array(
         "status" => "alert-danger",
         "message" => "Your ID or password is incorrect!");}}
+
 if (isset($_POST["new_email"])){
   $email = test_input($_POST["email"]);
   $text_area = test_input($_POST["textarea"]);
 
   $stmt = $conn->prepare("INSERT INTO contacts (email, text) VALUES (?, ?)");
-    $stmt->bind_param("ss", $email, $text_area);
+  $stmt->bind_param("ss", $email, $text_area);
 
-    $stmt->execute();
-    $resMessage = array(
+  $stmt->execute();
+  $resMessage = array(
       "status" => "alert-success",
       "message" => "Your message is sent!");
     $stmt->close();
     $conn->close();}
 
 function showOnePost($conn, $number){
-
-
   $sql = "SELECT id, user, name, text, date FROM posts WHERE id = ".$number."";
   $result = $conn->query($sql);
   
@@ -84,16 +69,15 @@ function showOnePost($conn, $number){
       <h5 class='card-title'>" . $row["name"]. "</h5>
       <p class='card-text' id='postFull'>" . $row["text"]. "</p>
       <p class='card-text'><small class='text-muted'>Ievietots: " . $row["date"]. " Ievietoja: " . $row["user"]. "</small></p>
-  </div></div><br>";
-    }
-  } else {
-    echo "No posts right now...";  }}
+  </div></div><br>";    }
+  } else {    echo "No posts right now...";  }}
+
 function showAllPosts($conn){
   $sql = "SELECT id, user, name, text, date FROM posts WHERE active = 1 ORDER BY id DESC";
   $result = $conn->query($sql);
 
   if ($result->num_rows > 0) {
-    while($row = $result->fetch_assoc()) {
+  while($row = $result->fetch_assoc()) {
   echo "
   <div class='col-md-4 mb-md-0 p-md-4'>
   <img src='../resources/images/1.jpg' id='images' class='w-100' alt=''>
@@ -109,25 +93,21 @@ function showAllPosts($conn){
 
   function showPostsD ($conn){
     $showPosts = "SELECT * FROM posts";
-        $result = $conn->query($showPosts);
+    $result = $conn->query($showPosts);
     
-      if ($result->num_rows > 0) {
-          while($row = $result->fetch_assoc()) {
-    
-            echo "
+    if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+    echo "
             <form action='#' method='POST'>
-            <input type='hidden' name='postId' value='". $row["id"]."'>
-            
+            <input type='hidden' name='postId' value='". $row["id"]."'>           
             <tbody>
             <tr>
               <th scope='row'>". $row["id"]."</th>
               <td>".$row["name"]."</td>
               <td><button type='submit' class='btn btn-danger' name='postDelete' value='Submit'>Delete</button></form></td>
             </tr>
-            ";
-      }
-        } else {
-      echo "No posts right now to delete.";}}
+            "; }
+        } else {  echo "No posts right now to delete.";}}
 
 function test_input($data) {
     $data = trim($data);
