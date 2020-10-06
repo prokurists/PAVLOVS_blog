@@ -1,4 +1,5 @@
 <?php 
+    if ($number > 0){
     $sql = "SELECT id, user, name, text, date FROM posts WHERE id = ".$number."";
     $result = $conn->query($sql);
     
@@ -18,4 +19,5 @@
     } else {
       echo "0 results";
     }
+  }
 ?>
