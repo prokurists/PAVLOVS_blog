@@ -106,7 +106,7 @@ if ((isset($_POST["postDelete"])) && (isset($_COOKIE['user']))){
           "status" => "alert-success",
           "message" => "Your POST is deleted!");}
 
-      $conn->close(); }
+      $conn->close(); showPostsD($conn); }
     
 
 if (isset($_POST['admin_Login'])){
