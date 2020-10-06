@@ -6,7 +6,7 @@
       while($row = $result->fetch_assoc()) {
         echo "
         <div class='card'>
-        <button type='button' class='close' onclick='deletePost(".$row["id"].")' data-dismiss='alert' aria-label='Close'>
+        <button type='button' ' onclick='deletePost(".$row["id"].")' aria-label='Close'>
         <span aria-hidden='true'>&times;</span>
       </button>
     <div class='card-body'>
