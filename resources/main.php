@@ -20,13 +20,16 @@ switch ($request) {
         break;
 
     case '/admin/logout' :
-        setcookie("user","",time()-3600);
-        header('Location: http://www.pavlovs.lv');
+        require __DIR__. '/admin/admin_logout.php';
         break;
 
     case '/post/new' :
         require __DIR__. '/admin/new_post.php';
         break;
+
+    case '/post/delete' :
+        require __DIR__. '/admin/delete_post.php';
+        break;    
 
     case '/' AND $number :
         require __DIR__ . '/views/post.php';
