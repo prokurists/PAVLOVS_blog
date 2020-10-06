@@ -2,7 +2,8 @@
 <?php
 
 setcookie("user", "", time() - 3600);
-header( "refresh:5;url: http://www.pavlovs.lv" );
+sleep(5);
+header('Location: http://www.pavlovs.lv');
 
 
 
