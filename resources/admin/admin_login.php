@@ -1,5 +1,3 @@
-<?php if(!isset($_COOKIE['user'])) { ?>
-
 <form name="admin_Login" method="post">
 <div class="form-group">
     <label for="text">Lietotājvārds</label>
@@ -14,7 +12,7 @@
 </form>
 
 <?php
-  } 
+  
 if (isset($_POST['admin_Login'])){
     $admin_name = test_input($_POST["admin_name"]);
     $admin_password = test_input($_POST["admin_password"]);
