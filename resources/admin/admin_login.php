@@ -19,14 +19,11 @@ if (isset($_POST['admin_Login'])){
 		setcookie(user, $admin_name, time() + (86400 * 30), "/"); // 86400 = 1 day
   		header('Location: http://www.pavlovs.lv');
 	}
-  else{
-
-  }
 	else{
 	$alert = "Nesakrīt parole vai lietotājvārds";
 	}
-
 }
+
 
 
 ?>
