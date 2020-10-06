@@ -38,6 +38,15 @@ body{
   margin:auto;
 }
 
+.fa {
+  padding: 10px;
+  font-size: 5px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 1px;
+}
+
 .navbar{
   background-color: white;
   border-color: white;
