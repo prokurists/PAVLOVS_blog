@@ -23,6 +23,12 @@ body{
   border: 1px;
 }
 
+#admin_login{
+  width:60%;
+  margin:auto;
+  border: 1px;
+}
+
 .navbar{
   background-color: white;
   border-color: white;
