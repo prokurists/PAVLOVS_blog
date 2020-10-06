@@ -23,7 +23,7 @@ switch ($request) {
         header('Location: http://www.pavlovs.lv');
         break;
 
-    case '/' + $number:
+    case '/' AND $number :
         echo $number;
         break;
 
