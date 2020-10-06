@@ -19,7 +19,7 @@ switch ($request) {
         require __DIR__. '/admin/admin_login.php';
         break;
 
-    case '/logout' :
+    case '/admin/logout' :
         setcookie("user","",time()-3600);
         header('Location: http://www.pavlovs.lv');
         break;

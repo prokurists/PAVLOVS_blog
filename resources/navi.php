@@ -8,13 +8,11 @@
       <a class="nav-link" href="/">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/admin">Contact us</a>
+      <a class="nav-link" href="/contact">Contact us</a>
     </li>
-    <?php if (isset($_COOKIE["user"])){
-      echo "<li class='nav-item'><a class='nav-link' href='/logout'>logout</a></li>"; 
-      echo "<li class='nav-item'><a class='nav-link' href='/admin'>cPanel</a></li>";}
-    else{
-      echo "<li class='nav-item'><a class='nav-link' href='/admin'>cPanel</a></li>";} ?>
+    <li class='nav-item'>
+      <a class='nav-link' href='/admin'>cPanel</a>
+    </li>
 </ul>
   </div>
 </nav>
