@@ -34,7 +34,8 @@ function showAllPosts($conn){
   if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 
-  $cuttedText = substr($row['text'], 0, 100);
+  $cuttedText = substr($row['text'], 0, 150);
+  $cuttedText += "...";
 
   echo "
   <div class='col-md-4 mb-md-0 p-md-4'>
