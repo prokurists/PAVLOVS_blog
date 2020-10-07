@@ -85,7 +85,7 @@ if ((isset($_POST["new_post"])) && (isset($_COOKIE['user']))){
   $stmt = $conn->prepare("INSERT INTO posts (name, text) VALUES (?, ?)");
   $stmt->bind_param("ss", $post_name, $post_text);
   $stmt->execute();
-  header("Refresh: 2; URL=/");
+  header("Refresh: 2");
   $resMessage = array(
     "status" => "alert-success",
     "message" => "Your POST is added!");
@@ -101,7 +101,7 @@ if ((isset($_POST["postDelete"])) && (isset($_COOKIE['user']))){
 
       if ($conn->query($deletePost) === TRUE) {
 
-      header("Refresh: 2; URL=$refreshUrl");
+        header("Refresh: 2");
       $resMessage = array(
           "status" => "alert-success",
           "message" => "Your POST is deleted!");}
