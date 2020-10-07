@@ -15,7 +15,7 @@ var total_real = "<?php echo $total_Sum; ?>";
 function showOnePost($conn, $number){
   $sql = "SELECT id, user, name, text, date FROM posts WHERE id = ".$number."";
   $result = $conn->query($sql);
-  
+
   if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
       echo "
@@ -36,7 +36,7 @@ function showAllPosts($conn){
   echo "
   <div class='col-md-4 mb-md-0 p-md-4'>
   <img src='../resources/images/1.jpg' id='images' class='w-100' alt=''>
-  </div> 
+  </div>
   <div class='col-md-8 position-static p-4 pl-md-0'>
   <h5 class='mt-0'>" . $row["name"]. "</h5>
   <p>" . $row["text"]. "</p>
@@ -49,12 +49,12 @@ function showAllPosts($conn){
 function showPostsD ($conn){
     $showPosts = "SELECT * FROM posts";
     $result = $conn->query($showPosts);
-    
+
     if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
     echo "
             <form action='' method='POST'>
-            <input type='hidden' name='postId' value='". $row["id"]."'>           
+            <input type='hidden' name='postId' value='". $row["id"]."'>
             <tbody>
             <tr>
               <th scope='row'>". $row["id"]."</th>
@@ -71,7 +71,7 @@ function test_input($data) {
     return $data;
   }
 
-  
+
 
 
 
@@ -85,15 +85,15 @@ if ((isset($_POST["new_post"])) && (isset($_COOKIE['user']))){
   $stmt = $conn->prepare("INSERT INTO posts (name, text) VALUES (?, ?)");
   $stmt->bind_param("ss", $post_name, $post_text);
   $stmt->execute();
-  header("Refresh: 2; URL=www.pavlovs.lv");   
+  header("Refresh: 2; URL=/");
   $resMessage = array(
     "status" => "alert-success",
     "message" => "Your POST is added!");
 
   $stmt->close();
-  $conn->close();}   
-  
-if ((isset($_POST["postDelete"])) && (isset($_COOKIE['user']))){  
+  $conn->close();}
+
+if ((isset($_POST["postDelete"])) && (isset($_COOKIE['user']))){
 
       $postId = $_POST["postId"];
 
@@ -106,7 +106,7 @@ if ((isset($_POST["postDelete"])) && (isset($_COOKIE['user']))){
           "status" => "alert-success",
           "message" => "Your POST is deleted!");}
       $conn->close();}
-    
+
 
 if (isset($_POST['admin_Login'])){
   $admin_name = test_input($_POST["admin_name"]);
@@ -114,7 +114,7 @@ if (isset($_POST['admin_Login'])){
 
  if ($admin_name == "admin" && $admin_password == "admin"){
   setcookie(user, $admin_name, time() + (86400 * 30), "/");
-  header("Refresh: 2; URL=www.pavlovs.lv");
+  header("Refresh: 2; URL=/");
   $resMessage = array(
     "status" => "alert-success",
     "message" => "Login successful!");
@@ -142,6 +142,3 @@ if (isset($_POST["new_email"])){
 
 
 ?>
-
-
-
