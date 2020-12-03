@@ -22,7 +22,7 @@ if(isset($_COOKIE['user'])) {
     }
 
 	} else {
-		  header("URL=/admin/login");
+		  header("Refresh: 0; URL=/admin/login");
 	}
 
 
