@@ -22,7 +22,7 @@ if(isset($_COOKIE['user'])) {
     }
 
 	} else {
-		header('Location: http://www.pavlovs.lv/admin/login');
+		  header("Refresh: 2; URL=/admin/login");
 	}
 
 

@@ -21,7 +21,7 @@ switch ($request) {
 
     case '/logout' :
         setcookie("user", "", time() - 3600);
-        header('Location: http://www.pavlovs.lv');
+        header("Refresh: 1; URL=/");
         break;
 
     case '/post/new' :
